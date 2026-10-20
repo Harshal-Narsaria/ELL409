@@ -1,0 +1,1909 @@
+{
+  "format": "ELL409-expanded-repository-v1",
+  "repository_url": "https://github.com/Harshal-Narsaria/ELL409",
+  "snapshot": {
+    "captured_ist": "2026-10-20T11:21:48+05:30",
+    "completed_primary_models": 85,
+    "planned_primary_models": 166,
+    "study_complete": false,
+    "worker_progress_at_capture": {
+      "pid": 25504,
+      "status": "running",
+      "planned_primary_models": 166,
+      "completed_primary_models": 85,
+      "started_unix": 1792461924.1591198,
+      "wall_clock_limit_hours": 8.909966282579633,
+      "device": "cuda",
+      "debug_subset": false,
+      "temporary_system_awake_request": true,
+      "stage": "training",
+      "dataset": "cifar10",
+      "updated_unix": 1792475425.2311502,
+      "last_completed_job": {
+        "dataset": "cifar10",
+        "augmentation": "none",
+        "noise": 0.0,
+        "width": 128,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "bootstrap",
+        "sample_fraction": 1.0,
+        "replicate": 2,
+        "seed": 411
+      },
+      "job": {
+        "dataset": "cifar10",
+        "augmentation": "augmented",
+        "noise": 0.0,
+        "width": 128,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "bootstrap",
+        "sample_fraction": 1.0,
+        "replicate": 2,
+        "seed": 411
+      },
+      "job_id": "d9f153a1c554d0b3eb",
+      "node": "root.A",
+      "class_index": 1,
+      "epoch": 260,
+      "epochs": 400,
+      "node_examples": 123938,
+      "node_errors": 0,
+      "epoch_seconds": 5.722722299979068
+    },
+    "scope": "Completed configurations only; live worker and unfinished checkpoints are not modified."
+  },
+  "physical_upload_files": 93,
+  "source_provenance": [
+    {
+      "path": "neural_tree/ell409_tree/benchmarks.py",
+      "sha256": "fb1b9acbfa514c80ea1978444a668d2039c0e6d4cfe5624acd208dcadbc402cd"
+    },
+    {
+      "path": "neural_tree/ell409_tree/cli.py",
+      "sha256": "de10a1b3865e52ef3a608ec760b99ea9641e9674af0f40c8530fcc4453ac6815"
+    },
+    {
+      "path": "neural_tree/ell409_tree/common.py",
+      "sha256": "46b96e985828a5e128cf82d43e5a80dc7f6b96d332f9bc243960d5c930ca0c85"
+    },
+    {
+      "path": "neural_tree/ell409_tree/data.py",
+      "sha256": "f4c66327d531d6e1a7672f80b8ff5ec6cb6fb7b5a25af99bdf93564bda4b4d22"
+    },
+    {
+      "path": "neural_tree/ell409_tree/dense_study.py",
+      "sha256": "025f6b499faadcb0911211b188e2e72eee4221a7ee2bec064f1da790c3b46e03"
+    },
+    {
+      "path": "neural_tree/ell409_tree/epoch_history.py",
+      "sha256": "4498fd2106f335d6025227f2bce42b753eee8bbd35fa38b7e83d1921e22aa982"
+    },
+    {
+      "path": "neural_tree/ell409_tree/experiments.py",
+      "sha256": "9dd1d510ed3540d1ffcc42144ead02e5f011bab00696a7e392357ed97737fa4a"
+    },
+    {
+      "path": "neural_tree/ell409_tree/models.py",
+      "sha256": "7cd9310168e7fa0a2ec575b9f515d37ef6af7047933646ad19b3152ad53d0ce6"
+    },
+    {
+      "path": "neural_tree/ell409_tree/packaging.py",
+      "sha256": "0318f79542374cea6d1a2c0e13bc3407af1740c2e43b5ebd8c0fc9b77c35347e"
+    },
+    {
+      "path": "neural_tree/ell409_tree/report.py",
+      "sha256": "07e91c1f0bcdbd9f0245f4bfc7407782d4b758a7f4c5a5c5a9aaf1a21bc1786e"
+    },
+    {
+      "path": "neural_tree/ell409_tree/review.py",
+      "sha256": "4aab81b74bc3d8f830582416119cd09a04178d182bd8f12f0e3a80adbd7a6b39"
+    },
+    {
+      "path": "neural_tree/ell409_tree/submission.py",
+      "sha256": "a6b7d36efc62f1724702796707498d499e0bea07990eb4691c2bb8125ab0f792"
+    },
+    {
+      "path": "neural_tree/ell409_tree/train.py",
+      "sha256": "51220b21c0133701cb02fa7e8c687496153f2a05fdb5dec3d506d56b99d4cc84"
+    },
+    {
+      "path": "neural_tree/ell409_tree/visualize.py",
+      "sha256": "0691a35aaca1be335ca21358d299c1be5e8a12ab3b038d2bd7d08869b89ead2b"
+    },
+    {
+      "path": "neural_tree/ell409_tree/__init__.py",
+      "sha256": "bdbd65577e057a59b4b541ffe24c2e8790054a7eb744bd158d22589d1b248318"
+    },
+    {
+      "path": "neural_tree/ell409_tree/__main__.py",
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/common.py",
+      "sha256": "a5f3e9d5ebe205bdcc5ba534aece3f0ff3108953a465662c0acc7733b9e198f1"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/data.py",
+      "sha256": "79164cbb04e2224d63637c16660803a313ea6cf9788cf4b6b0a7c6be833e5985"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/models.py",
+      "sha256": "4d52619efce4559dbb90e1e7ac8cdbdbf58b10c726a09bb724a416069b270a12"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/study.py",
+      "sha256": "348392bdca8fc8b49fc7629bd45ce1f747e8145e393ecd9e96785c836f97a67a"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/train.py",
+      "sha256": "a4d2c5e9f978425f52c58c21eb15e7e218dfca6f185dd6bec4425594c768cb84"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/visualize.py",
+      "sha256": "cc94a45d825acc232f3841e704119d346a43f2afd963d0f808bdbe49b4e4f67d"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/__init__.py",
+      "sha256": "65035365c632feb14ac0fbc2a1bb98dd6467186ab0530b1449820bfe30370936"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/__main__.py",
+      "sha256": "d815e0189afa1738f14187a84d730efbac92056aebd821ba85676a9928e02661"
+    },
+    {
+      "path": "neural_tree_v3/study.py",
+      "sha256": "b3adc3b4e9f3bf5ec450692259a70193d79eb3ccd7b41feffa60a4492ea348b3"
+    },
+    {
+      "path": "neural_tree_v3/width32_followup.py",
+      "sha256": "ca4bc83c208a319d6ba274adb13f196a05e920a131a105eeaed0e6c95d762027"
+    },
+    {
+      "path": "neural_tree_v4/random_cnn_study.py",
+      "sha256": "52343c20303322cef3ea4fe65477a4461a2adc3004d6ee64f3388412b30388e3"
+    },
+    {
+      "path": "neural_tree_v5/noise_study.py",
+      "sha256": "555bd162368cea1c963d52a79f3dbf459108ae144da53130e035e47c185bf8d8"
+    },
+    {
+      "path": "neural_tree_v5/noise_followup.py",
+      "sha256": "50a73ab56d29de677198ad398403ba926ad58fe248ac50de9e0043943cc3c65f"
+    },
+    {
+      "path": "neural_tree_v5/deploy_noise.py",
+      "sha256": "4902311096b0e287cbc852e7be7d08880b293968ff2eaa592fcd95e52be214ae"
+    },
+    {
+      "path": "neural_tree/pyproject.toml",
+      "sha256": "3cdc31565e10c4f79bc2d5c7e2f06a1d7dfbabb5c2cfdd4bb8e4901cc2a296fd"
+    },
+    {
+      "path": "neural_tree_v2/pyproject.toml",
+      "sha256": "00fb8973664d28de0d039507b2d7481533cd6a99f4c73a1cd9845d45dd78c638"
+    },
+    {
+      "path": "neural_tree_v3/config.json",
+      "sha256": "836ec940f55e7363163a2d841cbb0d85ed6c8770f5cb2171db9651c0711b4148"
+    },
+    {
+      "path": "neural_tree_v4/config.json",
+      "sha256": "7f2271e59cab09d059898a4d2eae1d997d59c6f4b5a99e507cd25c7efb342c0a"
+    },
+    {
+      "path": "neural_tree_v5/config.json",
+      "sha256": "86a0a9f8de7f50040118ac5ad6ad410cf019f98a1cdbd8bba7a5f06b5a3e40f5"
+    },
+    {
+      "path": "neural_tree_v5/followup-config.json",
+      "sha256": "d7de5e895c6e68524a47cf77733dfee5d1bb1e1278231b8f860853e858c3e62c"
+    },
+    {
+      "path": "neural_tree_v6/analysis.py",
+      "sha256": "367646fc9b3d2c1037e8c53ab94f019d8a2364520da178860909ac50d2ff7213"
+    },
+    {
+      "path": "neural_tree_v6/common.py",
+      "sha256": "4fb589fe280ae16bc557b966ee4cec3afd4f0c9810ea2b11c5e07f13f6972efd"
+    },
+    {
+      "path": "neural_tree_v6/data.py",
+      "sha256": "4b848fb8f10c4cea6d28680e4a2bb41d3251e7d4a46d591c5eafa99fecd4a40c"
+    },
+    {
+      "path": "neural_tree_v6/deploy.py",
+      "sha256": "ff859e6d29803e76623787f225342307ffce49d418d70293417eab066f59928d"
+    },
+    {
+      "path": "neural_tree_v6/plots.py",
+      "sha256": "bbbdfcbefa04c40d07e086b75cec49cb115d2bb3c97eb9df10e9a2718dc49799"
+    },
+    {
+      "path": "neural_tree_v6/run.py",
+      "sha256": "2f617ec08676b9ea3835d54053f5036e2205206f9844244a15fa559480244993"
+    },
+    {
+      "path": "neural_tree_v6/train.py",
+      "sha256": "ec8f59247d979e08c89dce1b276ef394d2183782131831912450e33d94258929"
+    },
+    {
+      "path": "neural_tree_v6/config.json",
+      "sha256": "3556d77b2f571a4fe85c843a943bd6ea99f63583de404f0d9eaf4a73775e509a"
+    },
+    {
+      "path": "neural_tree_v6/pilot.json",
+      "sha256": "e3d7b233df0db23b09d3fe7840168d2ed42d9bb138a608a5fc2cfa853b9c5ed9"
+    },
+    {
+      "path": "neural_tree_v6/requirements.txt",
+      "sha256": "237098fe4615cd2d40e61fa04ed6367bf16c15229af067b17f01c7613f4bdc0e"
+    },
+    {
+      "path": "neural_tree_v6/requirements-lock.txt",
+      "sha256": "41379bf6e4cf233896b1352437f0d0af8100809da5f6bc34f688dac245301386"
+    },
+    {
+      "path": "neural_tree_v6/README.md",
+      "sha256": "2a170270949fd8b81239825c156c62fb9b5bd7faad1601510c8ff9f57eeb7cfc"
+    },
+    {
+      "path": "neural_tree_v6/tests/test_followup.py",
+      "sha256": "743d54dc58e6650b0028212a35579323ebb796e3b6b3fbd2cab63fd19f342291"
+    }
+  ],
+  "legacy_archives": [
+    {
+      "path": "archives/project-01.zip",
+      "sha256": "ac9948a241394115711c4965bf0029435d51b47299dd88ef99e8c3dfbed35f6e"
+    },
+    {
+      "path": "archives/project-02.zip",
+      "sha256": "a353c1488fc1fea67c3229951f6ae0b6188b7aa0527458d8d529c3a20d546ac4"
+    }
+  ],
+  "followup_archive_entries": [
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cats_vs_dogs-augmented-single.pt",
+      "bytes": 1229307,
+      "sha256": "a42c328d762e0713b59036e997e15d7fe95f6787f559e7125fc3d6b816a073a9"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cats_vs_dogs-augmented-vote-3.pt",
+      "bytes": 1573287,
+      "sha256": "f4d426015797534554cbe60ed3ca3e78a66a4e5bcc017d971ad6ad9b6e5dc5bb"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cats_vs_dogs-none-single.pt",
+      "bytes": 1229102,
+      "sha256": "d37f2a1a521afbf9e0714de3b328a48ad216ce320b1b51dd470f1c3470c9d71b"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cats_vs_dogs-none-vote-3.pt",
+      "bytes": 1572912,
+      "sha256": "818f40ad3ad4c1fdb4407362a946292287840cb39d56ee2e2d1444f221e29dbc"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cats_vs_dogs-repeat-single.pt",
+      "bytes": 1229184,
+      "sha256": "aafaa830190b6902f0593610d340237b257f335a20bbe0c02c0872fe1687da3b"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cifar10-augmented-single.pt",
+      "bytes": 1879727,
+      "sha256": "6acc9167c34030b1e1daddfe67e538bbfd53e976db74f3ef4106b08cb4495bba"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cifar10-none-single.pt",
+      "bytes": 1878693,
+      "sha256": "b7320ca46b90089e3368203d48e2919d95013c021f10a9f2e425b41e8e25c1c8"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cifar10-none-vote-3.pt",
+      "bytes": 5311849,
+      "sha256": "7c02ab428116ad2adcab8577458d083605f0990becee1f0623a52092230ed480"
+    },
+    {
+      "archive": "followup-models-01.zip",
+      "path": "followup/models/cifar10-repeat-single.pt",
+      "bytes": 1879081,
+      "sha256": "6ab3a335861ae02a142d2e04dd114842f613312b753063ee0bbb17b8f1e2e374"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/captured-progress.json",
+      "bytes": 1090,
+      "sha256": "29f290a0478b8d95ed49e8cdde2600f95da6a40a1ede6a6f29e488722d2189b0"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/definition.json",
+      "bytes": 3148,
+      "sha256": "d2a67213147d6354415e479c9f09f1dfbc02737c80bf59310713ff31db00bc63"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/implementation-verification.json",
+      "bytes": 1185,
+      "sha256": "c8971f005912bd23f69c3331051f8994e28eb27190b3ed322e20eb975d32aff7"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-1/metrics.json",
+      "bytes": 3117,
+      "sha256": "024d4b36e0fe9c19a9b2c3a43a31e14722f3eebc6617afdee9543dbf07488214"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-1/predictions.pt",
+      "bytes": 114409,
+      "sha256": "014a046d18e2fc8d61052f9615eae9181c37dadbbeb221cabd67660a9603c527"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-12/metrics.json",
+      "bytes": 13119,
+      "sha256": "4ebf656e8038d1f8caaa61cd432324c04eae7d68247eb15641d33a3d4e08b25f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-12/predictions.pt",
+      "bytes": 57888,
+      "sha256": "b5fe7e36f29efe1e524ba0af33af95c87ecd7e5dc5fd32927a4b20203e5a2285"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-2/metrics.json",
+      "bytes": 3646,
+      "sha256": "51900a4ef33fea5b51f57b790895610cb5d73ce8e51e408e9af99eeaa07e1dfc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-2/predictions.pt",
+      "bytes": 57888,
+      "sha256": "94239793f684eaf58b8d6b0aa2a61f2deb29c97cffa1338ffa10c4c1ad721236"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-4/metrics.json",
+      "bytes": 7436,
+      "sha256": "c4c15c04ce24332bf1277326d3c2b9757c203062cd9de47f8356d449ba7dc946"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-4/predictions.pt",
+      "bytes": 57888,
+      "sha256": "4438ebe54732ec340f17dd9f7d18b77ef1e5460b3cc25b9362d1a425f835987c"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-8/metrics.json",
+      "bytes": 12929,
+      "sha256": "ebeedfca9137fd4471a8a5fdfadf453303bc95715b8698ead4ef2ad1a01cf04f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0030a06a79bde25d1e/epochs-400/depth-8/predictions.pt",
+      "bytes": 57888,
+      "sha256": "c0afe3487bcd6e7068b8d2fffd0a972140f478d90b5af07f5703ec2c82e11b4d"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0dd107719f7f401230/epochs-20/depth-1/metrics.json",
+      "bytes": 7123,
+      "sha256": "e904e3a540b232e53fe5f55ce7e1b1c7a364ea50c17a123416bed398b851b8f4"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/0dd107719f7f401230/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "96a14a88bcf0ccdc56d7186223f40e1f22c071493d5eb475b708e6828e9d3ca9"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-100/depth-1/metrics.json",
+      "bytes": 2951,
+      "sha256": "6b3b9f52465e8d72acde92b0efc1d15b75071c8acc7befa640aa481d3403dc5a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "3d21c240f376c92051e72639a7d7ccdfda29395506f458b3f2fe6394f754a468"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-20/depth-1/metrics.json",
+      "bytes": 2951,
+      "sha256": "c5b507c2733daaab79aac5416d6da8881554d7f4796486faa06ed256c6010b82"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "00636732d593e41fb1a572322f02da6e472b1d61ffa86f49fa9eda3aa7cb25b1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-400/depth-1/metrics.json",
+      "bytes": 2959,
+      "sha256": "7574db3cf4c7ab386c4b35b5379ea247b4ee875994c3a59da402a055b8e5eab6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/189f7334c61f62ec79/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "65040e4da1aceaec27ab83f28ecacf324723cf38ec98478605fecda54d339414"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-1/metrics.json",
+      "bytes": 5233,
+      "sha256": "8fa543634c90e0f72850f9872cbc00675b5e092fe6ef2017ea528d3703a765bb"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-1/predictions.pt",
+      "bytes": 843049,
+      "sha256": "19ea78ee3dd2d3288c91e2fc7241949920ff4d32e0cff5a85e12e1f16fbe6049"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-12/metrics.json",
+      "bytes": 23391,
+      "sha256": "84fed022c75e2556d52edae5826be3c8c6718c8c197bb0e578e95b8cbba62d72"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-12/predictions.pt",
+      "bytes": 282208,
+      "sha256": "26b4cac8eaf49031598309c2fdcb84ad99f7dfdbf768fa6675c804324ab82edc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-2/metrics.json",
+      "bytes": 10206,
+      "sha256": "9276725d0d70ed17dca88695eae13a2df6df0b420b10d605abb01b580d6315f8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-2/predictions.pt",
+      "bytes": 282208,
+      "sha256": "88bee87bedbdda0151f4ef43b95ae292bd06fe23e13f54666a00cfe74c39e985"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-4/metrics.json",
+      "bytes": 21058,
+      "sha256": "1c7371d87f934c21740fbbfb2707517152b882688ae9c03870cc5821d30ecb72"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-4/predictions.pt",
+      "bytes": 282208,
+      "sha256": "92870502ae5916928ac726c744f392073fffca727b8d449eea92ad8a6ca3994e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-8/metrics.json",
+      "bytes": 23389,
+      "sha256": "ff258002472e7b09abcbe62fc0348e4df7ec57943803cb0db9135c4830c9c292"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/1d9c8096b596127b26/epochs-400/depth-8/predictions.pt",
+      "bytes": 282208,
+      "sha256": "26b4cac8eaf49031598309c2fdcb84ad99f7dfdbf768fa6675c804324ab82edc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-100/depth-1/metrics.json",
+      "bytes": 7168,
+      "sha256": "5ad97fa03f74f3d5f6761c1ce19f29e458993c74cd42bc06b9957d062288e9d3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "f6c333b5873cb5ea1eedbe84b03bd46f690eadfe345ad94e464b80ee5f21b651"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-20/depth-1/metrics.json",
+      "bytes": 7152,
+      "sha256": "0f716a1985029743a908c24d4383ebd5f31dc4005ebd48711ec38580f6c0b346"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "d5cf8e8514348b44bdc627a63d858b00ed1d0f5e59f84e282682d21f40cd1962"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-400/depth-1/metrics.json",
+      "bytes": 4578,
+      "sha256": "cd58a4b18b1a86413647c95748b338572511a3be613126a14fb5f5cb15ec16a2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/2060fa252dddb071d3/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "8913b22381a7a294a41ef4f19b1ad257e35ae82905fbc96b3c8e3d5f23c0a253"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/20910e6de618a21494/epochs-400/depth-1/metrics.json",
+      "bytes": 2711,
+      "sha256": "5a5e13b983a1c7131b15714291d3da3ae7f77c0585d3b7a1befa041ef2c868d8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/20910e6de618a21494/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "52a0dd8bccf1f484a688372597d1d8bb1f5312a30b0f64236cdc1a4819ef7946"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/21ffa6bc18736dd467/epochs-20/depth-1/metrics.json",
+      "bytes": 2940,
+      "sha256": "59a315fb28919cb4d4bbfb8e08baa9025e670296953a89a78d4d20f7ee7d9774"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/21ffa6bc18736dd467/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "9f6e546c1df29f7ff3699c74f6f767eaac0de19871a292cdd4e260f0c3d697b1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/23c52529147b374092/epochs-20/depth-1/metrics.json",
+      "bytes": 7135,
+      "sha256": "c18879e187f262b5a864c51216399fd95376c3f30d5048275fe43682345a55d8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/23c52529147b374092/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "9d8b81c5f6c75bd5aa5b9979259c6e319303dba4018fe58475f8b03cb7cb77f4"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/240d90678f0e190faf/epochs-20/depth-1/metrics.json",
+      "bytes": 2931,
+      "sha256": "dcf47ea41bcb1ad420d4422f7bf88d50997d0fe858ef0da3f257cdfef271ce68"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/240d90678f0e190faf/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "eec49239c2489bc7649820e1fa8ec27c4740ed3766fac863372826c43d049bb8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/41430a8bfe8b799638/epochs-20/depth-1/metrics.json",
+      "bytes": 7088,
+      "sha256": "101e9650a61b5a390f20570adf2a1b78110b995bec57feed17c79a8e47a77e35"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/41430a8bfe8b799638/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "b042c12b9d505cf2bd16fe6dfe29ecd05251468129f9baeb6758f875f1276218"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/44dcabb8e7bf7a9d56/epochs-20/depth-1/metrics.json",
+      "bytes": 7098,
+      "sha256": "2849425713086efa0c224e601f4e56d0bcb816b5846512bd5cfae1fc167d0aa5"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/44dcabb8e7bf7a9d56/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "7618ea7489dd08b69886af4c07b09edea4cdd2356d5fe15d3e827b7a24af974d"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/45bdf307fe2f51729b/epochs-20/depth-1/metrics.json",
+      "bytes": 7120,
+      "sha256": "9327beabae02776706658bdcafe1288d3323aee662501d12a76eeb45f8a54c9b"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/45bdf307fe2f51729b/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "e60f33825504c37fbe02f5041e6cc59cb8461def2c57d96e85a82885787d1250"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-100/depth-1/metrics.json",
+      "bytes": 2723,
+      "sha256": "a5c7dcb897e8dba38b82d481cdb9f908a103710b224855d36af8e2e4719ae3e1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "e08c0773c17fb8d9b7ea48181c17ac0d3a185c75fc3e496d1ae54984e3b0b16c"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-20/depth-1/metrics.json",
+      "bytes": 2949,
+      "sha256": "13aa59873e081b07570bf3a0d7a7abcff543e9371d10ca6f9a725077a91499c6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "68fcf478374f12d5cd3d3b0bfb1b176f34577e099935acd25a113c2488ed8569"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-400/depth-1/metrics.json",
+      "bytes": 2953,
+      "sha256": "333beb28e1b4904c89775ad3a22eefe8906d269937377d186aaa7867ebe06764"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/49b2a2a45e69e63de4/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "e31ef4f555c050ee3f84e706b6736785e0b46c35f1130cfc4f4331b193433b9f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4e3f037397904346b6/epochs-20/depth-1/metrics.json",
+      "bytes": 7086,
+      "sha256": "25906cb469b0a550a770e4eaa5d9e2bc08ef3a21666dbdf56684e3e111e549fc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4e3f037397904346b6/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "5ae33ecdd52fe11b58ee5997bd6a3dc6f50febff12440169c21b0d605475e36a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-100/depth-1/metrics.json",
+      "bytes": 6916,
+      "sha256": "4811357b4de0b4ff18efcd4bd534df15c66c841f7fd580e7173d7e12049953a6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "32b16a51b3b2f894d427bac1734bbfe587562c6d3fbc150c625ae42cfa9e60dc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-20/depth-1/metrics.json",
+      "bytes": 7122,
+      "sha256": "ecd429bd11047c79cc085cf2e8a4d2163db896949c1b691fc124cbd5141e0328"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "0cd9b585c209d77f94496aa156a63b82f93485d37f1904a5af5eec1c9bca22a0"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-400/depth-1/metrics.json",
+      "bytes": 4321,
+      "sha256": "b519e5f79ec75458028e4bbe064847ff0ae8ce4f384869ba96c81a171f1c5e33"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/4f67b0dfc13215694c/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "d410760b5928e5988c96e1d7e3da934ae24c81d7d097a6989a15a1c6238073bc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/51ed4d1faf7296ab84/epochs-20/depth-1/metrics.json",
+      "bytes": 2915,
+      "sha256": "299ec3ca4d08bd26829a813bfe1365298b45d4c3df403abe68055a43d1400cf3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/51ed4d1faf7296ab84/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "bc67b453d3eaed2c5f74075957438e16c4397b7ef61c3c4d78d0bf35d793727e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/54181333fa74a9060a/epochs-20/depth-1/metrics.json",
+      "bytes": 7138,
+      "sha256": "780b7404d99c343eb0bde529101ea0d171a03ddb2645143771655408c9a71684"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/54181333fa74a9060a/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "e8392a43f2b9c6077c41cbd5534e192b4660efac2f3d87804b952865e5163192"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/6000be2235846609de/epochs-20/depth-1/metrics.json",
+      "bytes": 7109,
+      "sha256": "e8674e7cbea40d23f8e4bd342c5a8df70f4897e6491fee48dc6f4a966f1fef6e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/6000be2235846609de/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "046ddcf837924c017e0ef254165b5c141c619d06b7a3e499565a904e1525c53e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/64183efa9f95d52b66/epochs-100/depth-1/metrics.json",
+      "bytes": 6474,
+      "sha256": "64369a86e6abf653debe902d7aa8bfb335575723845a655d24afbcd9f18482c0"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/64183efa9f95d52b66/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "e36ed93dce17abed0b30c767310de7f554b3dab9415184a2c1e3c74f92d64afd"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/64183efa9f95d52b66/epochs-20/depth-1/metrics.json",
+      "bytes": 7158,
+      "sha256": "2e4d4df9032eaca581f7a59cb478080d09d774bf78801152888e64f44cc9c150"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/64183efa9f95d52b66/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "bde18c6d4a80e0782ab42e026ff73a51ff98e616424715219300f2d7b5dbf698"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/692529a70fdfe3e79d/epochs-400/depth-1/metrics.json",
+      "bytes": 2675,
+      "sha256": "3d9a6c19dd7b9935d9736261363b9a3e908ef697006026acdb2a4a0bb6965406"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/692529a70fdfe3e79d/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "623da4d7d92286f65735a5fd0f2723e0277d0e8757181d241c2d74bcc59c11b8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/75499f0b575418c9e5/epochs-20/depth-1/metrics.json",
+      "bytes": 7084,
+      "sha256": "b2530752db49991fa361575ad03b647914c58aab299b50d279b54a920edec43e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/75499f0b575418c9e5/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "20dc436b1e0cdf5dcb02c19d9a5db583a181b373b6b920f4de07da26b84efd85"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-100/depth-1/metrics.json",
+      "bytes": 2718,
+      "sha256": "894bf3ffc64cd79985df75b98da6511e1895d090c5f2fa3a84a52966293e038d"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "78dc7fcfda05665b1416bda114caf25beb18ba9db083068baf3c46a5fc8d09d2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-20/depth-1/metrics.json",
+      "bytes": 2943,
+      "sha256": "c164ec51579b703aa84f4fd3a0b656cfeebb3027f502e8f225accac9aca4555b"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "34afa22720d6a260a276b19b00255d5147e3242f4d1a39eb90b2dec2404116ec"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-400/depth-1/metrics.json",
+      "bytes": 2702,
+      "sha256": "4113672ab7fee323a67c5ab7fcd033f6fd293d2aec33471af9634da340d6ab50"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/7ac58acbd9ca1f1e86/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "d9d47658e7fd83bc1200b76dc86f88ba275a99356f563f456af2ae462d9761ee"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-100/depth-1/metrics.json",
+      "bytes": 6902,
+      "sha256": "1747b634b9c17dd239e350f3b1929b297634dbd97dbabcef94c5385e83830dd1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "699b79e7c3a3d40aa5846f37545a09a6370c17a8d281ba2929542cb0a0f67df1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-20/depth-1/metrics.json",
+      "bytes": 7114,
+      "sha256": "8ed635db68cc37bf7c8882b3c244f3030701973c5825e623f7ac93a6e9a7cb44"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "68c3b65076f294e278b3efb69886a354df38f17bae56cc9c00cece4d297acdd9"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-400/depth-1/metrics.json",
+      "bytes": 4100,
+      "sha256": "3e5ccca04a84b93469b8822261a845959d93919730116ed2e40863d7958f7c92"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/812c4176f108bfc442/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "71dd2f4bae45c94f78f268ead9f18a3724bae3c6e1a7ffdf6531df48fbe3b0e6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/877b49dfd5c35d4e8c/epochs-20/depth-1/metrics.json",
+      "bytes": 2931,
+      "sha256": "9a39a144087adb1e99fda53381cd30cb2dd4690daf33873f15e88a79f8648eec"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/877b49dfd5c35d4e8c/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "e3209479f9256dad8a38634a8b79a9f44297224e93cc3ad31a37644ee724c24a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9421fc7bd8c43d2b21/epochs-20/depth-1/metrics.json",
+      "bytes": 2930,
+      "sha256": "c3a961d37127a5fbf382eff6a18928a5a7ceeb4b080faac24ea529bc5a21e568"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9421fc7bd8c43d2b21/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "3ac800f1b2e78692480655b48d6cfb4a2b90896b702fd3fbbb83a825c61b68db"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-1/metrics.json",
+      "bytes": 4742,
+      "sha256": "2216d0a29fbda80953912e2af989e90e8ec1dee5ce6e8e60de472edd0b78ab2e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-1/predictions.pt",
+      "bytes": 843049,
+      "sha256": "88abfee57c7b657d83ea92f42e3b270b39e4176231a727ec5527ef0ee8f53b91"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-12/metrics.json",
+      "bytes": 10345,
+      "sha256": "e55ebb9d619aad1d15d8a3eee9650b4db20dbf5adb5f4a644b58d33e431df08e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-12/predictions.pt",
+      "bytes": 282208,
+      "sha256": "10eec057d0506ef6a7b35b530adfd8a67c18784581d6693fc4f59e23a1f8e311"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-2/metrics.json",
+      "bytes": 8517,
+      "sha256": "9158b460beb8bfd370a7b86902f29b343bce69c8ce48d6d6e46690a9eb6f36f6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-2/predictions.pt",
+      "bytes": 282208,
+      "sha256": "9d4c14505153459dd2094a986b663d340f876964cb187bd2a4dfff739bb7e9c3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-4/metrics.json",
+      "bytes": 10392,
+      "sha256": "f9f060f0ee2a65c1799600d57355ae6159997e0b1f89495133516008d2877661"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-4/predictions.pt",
+      "bytes": 282208,
+      "sha256": "e162a41597f478e1d67edbe9e1f152a3e402e20b1160c9820593c6c0a778aee1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-8/metrics.json",
+      "bytes": 10343,
+      "sha256": "188d9c23a6e486373826841b845249fc0740b0075974e2e5d25472c4426c448e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9698d11960b83325b0/epochs-400/depth-8/predictions.pt",
+      "bytes": 282208,
+      "sha256": "10eec057d0506ef6a7b35b530adfd8a67c18784581d6693fc4f59e23a1f8e311"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-100/depth-1/metrics.json",
+      "bytes": 2484,
+      "sha256": "b89bdc0bd42fe940fda50e3552fb6d59fdd8175701697ea34c0e680f3e751859"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "12bb6de26f6ab8a33df58ec49bae3762ede438e3e5a8f40de9202bc4ce1446fe"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-20/depth-1/metrics.json",
+      "bytes": 2941,
+      "sha256": "60e5a5fcd33e82218562b97ee4be104baee7a447f6eec7246b7abcc7723e2411"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "bc67b453d3eaed2c5f74075957438e16c4397b7ef61c3c4d78d0bf35d793727e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-400/depth-1/metrics.json",
+      "bytes": 2710,
+      "sha256": "4764f45cbc97209a2e9c18819640ce46d5021061aa5e34a061aedb083b0d89ed"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/97db5dd5a893d42496/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "77b63933ad8e04c739c6fe309a26aeee347cd2a85224d2c37ecdae975bf7193a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9d57d376926a511812/epochs-20/depth-1/metrics.json",
+      "bytes": 2944,
+      "sha256": "63b8543159bc3a5f586aa601736c09e2901d0da80a944f18f55e32c1a82a5aa8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9d57d376926a511812/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "3a5caf2504e5d1bfd50b9b4752bf977e77221abd4079937bf01098d5f0c8cc56"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9f60873432ee5c1d79/epochs-20/depth-1/metrics.json",
+      "bytes": 7124,
+      "sha256": "18466926db946a952e5b7646355be35575c16324f7fa974e2feac4dfab5bd6da"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/9f60873432ee5c1d79/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "6c9d4ff82fa426e7857baca3d180553f670a1f9ccc7e076a1fb2d840a477c9b3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-100/depth-1/metrics.json",
+      "bytes": 7144,
+      "sha256": "84f5a59da629dea440b5ef151b650b0c88a41edf0e58a8bbc51d9125f0c17f4a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "3ed756375e972029662be525dac34844b1c006cca25f7dcc4980e4198de084a8"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-20/depth-1/metrics.json",
+      "bytes": 7102,
+      "sha256": "c98bd80b0fde99831c76bb4b0e00c7d8bf77f61a600ddf1ad09f19f5f2581784"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "9856a823f25e1731ee925f8295348c5543e6e31758ea9dc6862bd2eea7e346ad"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-400/depth-1/metrics.json",
+      "bytes": 4099,
+      "sha256": "abf45590fe851da23ac0646fbbd90caab596bcce2c42dcdbcf9e2f5bb544a920"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a48a507be4a5dcd361/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "44f82c4db3656d3f2bcc23177714b9687479df34ec734ac66ddf2f8f9afa1c48"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a908a1544fba3c723f/epochs-400/depth-1/metrics.json",
+      "bytes": 2890,
+      "sha256": "4366d6d9992799943bcc8b0ccadc840b20773035f27c4a4a961ec36cce5d09fe"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a908a1544fba3c723f/epochs-400/depth-1/predictions.pt",
+      "bytes": 114409,
+      "sha256": "828d4d2c5fd3f196b512c3d385d96d380f27afa46c8bf29d68f37f5470c5a7a5"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a9656e39a81f2d1d46/epochs-20/depth-1/metrics.json",
+      "bytes": 2941,
+      "sha256": "35a3755f26489e78df6ea48de133fee8c99f0c48d7f57a1d163466c93bc755db"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/a9656e39a81f2d1d46/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "9508f9ee08448f14654aaf0afe1edf6a1e05cc6a309a0f07508dfa36707e43f5"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/aec63f048e20c28018/epochs-400/depth-1/metrics.json",
+      "bytes": 2709,
+      "sha256": "c54b8c7a9dce0b0d26178dacd709f122ded39ba676346bdc77d1302e9d409bf6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/aec63f048e20c28018/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "9c6ac64093ad23636c622df24a04a2b6d28b663407d741ed92e23c0d113ea651"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/bbf762abc2c585b6dc/epochs-20/depth-1/metrics.json",
+      "bytes": 7105,
+      "sha256": "04d84a4608a241ffbd43b4283bbfddcc1bcfcd42aa62bce7a6c1351c5d83c61f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/bbf762abc2c585b6dc/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "6c6431a9035363a20f04b55db1e87e61c4f42957163981819fdc831392f36538"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/ce12b0f4f80346556d/epochs-20/depth-1/metrics.json",
+      "bytes": 7123,
+      "sha256": "b83ef08564ffa742667fff763f51df1fe617f1cbf08bb8b0d3f704adfec6aaa6"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/ce12b0f4f80346556d/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "060866132250ba120b1d2ef4383aaf18fff24afe916dbb08cae3a01449aed4dc"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-100/depth-1/metrics.json",
+      "bytes": 6922,
+      "sha256": "84787b2c392c355fbf9932cf7180f67f80f994e6718f69935b87a82141a8050d"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-100/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "e51dff30068bc84068d57e81996059a92538e96943c6f9c3b56503bc6bf037e5"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-20/depth-1/metrics.json",
+      "bytes": 7153,
+      "sha256": "a15f632305b663dc4c9c55733310328e4e81df796b5386d2177bbe8204ee7cd2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-20/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "5bcd2b3ed9856165c8e37e80dbce4d422f3aae9173ad7c87d0263bdb06c52b00"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-400/depth-1/metrics.json",
+      "bytes": 4117,
+      "sha256": "dd2f48b40735212bc08c030f90c9d8c57400afdd45fe5b39f24f52aa98917490"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d14dd718aa2b349060/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "6d533254a170ead385173b7f52d49e6aafff66b9e05c300c22652d55ab636214"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-100/depth-1/metrics.json",
+      "bytes": 2948,
+      "sha256": "7d9ee7e99a8800600feb0bbb836628e759343fdb226840d5bebfd67b06e340c2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "046f99d73d21d6a26a65b2bd46f83d6d3ad5a55d8db0727fcb662b0ced227dff"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-20/depth-1/metrics.json",
+      "bytes": 2941,
+      "sha256": "1ef7cba98813e91a6000a2ed8f04cbb434cfa50e9bb18aeae10ffd66db362b84"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "3016fb64f9657a440d63a62b0385fa81d664a7475a3f380bb5797c6960532ccd"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-400/depth-1/metrics.json",
+      "bytes": 2720,
+      "sha256": "c969bb7e581e48e59fadf61de8555c796a389c28303d649420ec285156e22e75"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/d4a84114ed06b4b740/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "299b6288d6df76b26000be779eaef07f75c8e674378e2426e80b2dd62b568cf0"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/e5d21657f4d02f799a/epochs-20/depth-1/metrics.json",
+      "bytes": 2709,
+      "sha256": "10badb3f62e31ee9264bd8cafd6d5b8a35aeba3122677ba84bf37d62fab4df5e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/e5d21657f4d02f799a/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "959005a2b81daef7b18f811158a00cd49311976e215da0f703fe0b71c7abbed3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/e7c2b0b1fa46d3e778/epochs-20/depth-1/metrics.json",
+      "bytes": 2942,
+      "sha256": "0475298e345d1d553295f793e9852a916ed7163aa0ba47e13b8c5b49574aaa3b"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/e7c2b0b1fa46d3e778/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "247bb87c6ccfe2ae4ac33a6be3c345dee03629b052154b8cdaa3f1776405c692"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f2fc005ecc8bf7f59a/epochs-400/depth-1/metrics.json",
+      "bytes": 4287,
+      "sha256": "1040f4f4dc1d9a309f9e3d57f245ae262ff6ba859b025a01ef737084b9d082eb"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f2fc005ecc8bf7f59a/epochs-400/depth-1/predictions.pt",
+      "bytes": 843049,
+      "sha256": "b19003762638912b3df62dd6f87ed8a7cd0e1272ca089b258b3337b1a33edf9a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f424270647d40a6743/epochs-400/depth-1/metrics.json",
+      "bytes": 2425,
+      "sha256": "9718a19ffdae88abcdce801f631d0f531ea8111c105eb976e0a2a69fab57d5f7"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f424270647d40a6743/epochs-400/depth-1/predictions.pt",
+      "bytes": 282208,
+      "sha256": "9953354e1c1794e5ae063ecf537b9ac2951499fd308e01006d9c66625bad470c"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6c0aa4de8f21115a8/epochs-20/depth-1/metrics.json",
+      "bytes": 2913,
+      "sha256": "144cb9a4f14bc60799f9fbb5c17768826d587f26ebb66be335d380d62f924613"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6c0aa4de8f21115a8/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "04b9dd387341f66dd743932599e1082e3419249f40ff0abb973a28b3453f8f44"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-100/depth-1/metrics.json",
+      "bytes": 2937,
+      "sha256": "d6fbe131a7c9049760e02f9a2c66906baf1f5d3231fc12fcc9562641b7864261"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-100/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "af68eebf392b08b64a1e2f33902082abe80b2c83277e246dea52cfe2e2ff78b1"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-20/depth-1/metrics.json",
+      "bytes": 2938,
+      "sha256": "da83dc887327c1013aefe27afb76f191b402ea657ec0f2b5b3b69850f1db2854"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "aa0f7816714550776c5839cacd45943ae60b393488183cd4fed78552d6318919"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-400/depth-1/metrics.json",
+      "bytes": 2479,
+      "sha256": "197be69fba9e0dae8117f018a4505ffa0d1892726878cee3e24ed88fbf646da3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f6fbfc03e13936c625/epochs-400/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "14b48d91eae51acbd5ec99e220f89c69f29de55e54f633f941801e16c1fedcd2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-1/metrics.json",
+      "bytes": 3130,
+      "sha256": "192e2fb0a59f77e01ed9126e8909254d2f027d7c4fed325d4e765004cb48c43f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-1/predictions.pt",
+      "bytes": 114409,
+      "sha256": "8c7fe776f22b01acad263828ccdf8be3da90f7ef4c44b67f04d4111bdec39f5f"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-12/metrics.json",
+      "bytes": 21260,
+      "sha256": "6e9b478f46c99283cb841061c0ae796aa7a191d384165c8a1728bb4e4d1fe93e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-12/predictions.pt",
+      "bytes": 57888,
+      "sha256": "63dcf6117e542b2d8aeff96b733a2f6474dca8b7c6fe380f3f411f5ad9aa2f54"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-2/metrics.json",
+      "bytes": 3424,
+      "sha256": "11cb121d5e9d297c273352cfe6c98309065105c9a86626482be056a008daf357"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-2/predictions.pt",
+      "bytes": 57888,
+      "sha256": "81e0b862e282bd134abca631e7d4e4ff971a36c6357b49754715c7ce89302fe7"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-4/metrics.json",
+      "bytes": 6992,
+      "sha256": "5cb7875df162ad2daf1df03b0790a6234331695acff150b3da4ad3997b2a43d2"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-4/predictions.pt",
+      "bytes": 57888,
+      "sha256": "89ac656318737afefed99f2ee73d48d5519badd1b5428dd6c98a19546d180070"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-8/metrics.json",
+      "bytes": 21257,
+      "sha256": "f54035d25cb8c34ee15e320d81372045bed9c3c82f98a4d9acc7dc450fc4e1a4"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f896c79803804af8a6/epochs-400/depth-8/predictions.pt",
+      "bytes": 57888,
+      "sha256": "63dcf6117e542b2d8aeff96b733a2f6474dca8b7c6fe380f3f411f5ad9aa2f54"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f8a99e609a0c3b001c/epochs-20/depth-1/metrics.json",
+      "bytes": 2942,
+      "sha256": "c346749ee18fa4da0b6689404dfde074e360796719040f55db51d4355df6e3f4"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f8a99e609a0c3b001c/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "26879bd905c7f48157c0bc2f26feb778091f4b884df78b542ebdadb691494166"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f8ff9bd6bc968ffa12/epochs-20/depth-1/metrics.json",
+      "bytes": 2928,
+      "sha256": "d794e57faf057aede22555ae44d2e34ff161f0e373437e9fbc192f17f4aa31d0"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/models/f8ff9bd6bc968ffa12/epochs-20/depth-1/predictions.pt",
+      "bytes": 57888,
+      "sha256": "3ba276ab6aecbabe6967e8ee42b4d8f45859295065689da95f810deeb73ad684"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "neural_tree_v6/runs/augmentation-study/primary-plan.json",
+      "bytes": 40028,
+      "sha256": "1b1783ca4b3a228a6e15840a03f223ef60f8979f374c7c177ea72af3a54924bb"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-augmented/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-augmented/landscape.npz",
+      "bytes": 5940,
+      "sha256": "d46792ac0b170e874624bcccb75dadca7099c15d9ffe61368360f955054e6196"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-none/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-none/landscape.npz",
+      "bytes": 5854,
+      "sha256": "9630099471513e5fbcfe89c0dbed1a9408ff5c3afcb454dfd7f55867a8bf2d9e"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-repeat/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cats_vs_dogs-repeat/landscape.npz",
+      "bytes": 6015,
+      "sha256": "0f0305814150cc1400dff14e31346662fb15c92f8f9ca6db2ade7539ebdce53a"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-augmented/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-augmented/landscape.npz",
+      "bytes": 6515,
+      "sha256": "0db290311db77427721f04ac5636475e27ad9b6ef37075ce6935e860c5993c34"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-none/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-none/landscape.npz",
+      "bytes": 6400,
+      "sha256": "854d39f6f209132e2badf856c2e94cd2e02f77e153e78cc30c9393deeece73b3"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-repeat/landscape.json",
+      "bytes": 784,
+      "sha256": "6f37f34af93a5fe4d8535480de36090a040c7632a394c76ad499a1233d569212"
+    },
+    {
+      "archive": "followup-evidence-01.zip",
+      "path": "followup/landscapes/cifar10-repeat/landscape.npz",
+      "bytes": 6616,
+      "sha256": "6868d3751c47c1a32b33cd5a1406dfd0f985e22653bc0d8717725e49e7de4016"
+    }
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 255,
+      "sha256": "80f306b7ee67e8d35313b810bfac21554aa68446d62fdc66f2c16d6e3a36c7e6"
+    },
+    {
+      "path": "archives/followup-evidence-01.zip",
+      "bytes": 10502114,
+      "sha256": "0f9335f48fea9832c72c8b5b321ed3516b23870a89b2ec6883bcd4bdc82490dc"
+    },
+    {
+      "path": "archives/followup-models-01.zip",
+      "bytes": 16256335,
+      "sha256": "e03ce425c1b679556af84830531abf7c80afa35dd4e632b810091984beba9b23"
+    },
+    {
+      "path": "archives/PREVIOUS_SUBMISSION_INDEX.json",
+      "bytes": 211100,
+      "sha256": "9bd6fdf0e5e85a5195beeb162871665ca7cfe8ce7fc89951af732cf88b7084a0"
+    },
+    {
+      "path": "archives/project-01.zip",
+      "bytes": 25163242,
+      "sha256": "ac9948a241394115711c4965bf0029435d51b47299dd88ef99e8c3dfbed35f6e"
+    },
+    {
+      "path": "archives/project-02.zip",
+      "bytes": 18775935,
+      "sha256": "a353c1488fc1fea67c3229951f6ae0b6188b7aa0527458d8d529c3a20d546ac4"
+    },
+    {
+      "path": "docs/EXPERIMENT_JOURNEY.md",
+      "bytes": 2590,
+      "sha256": "cf9ba80debb46a9ee32c9f3ecc076aba6fe8b3436ddd5e5ddde64355517e8250"
+    },
+    {
+      "path": "docs/FIGURE_GUIDE.md",
+      "bytes": 1947,
+      "sha256": "49687a5b04a678f7fd069c74e8c9e76d935d9017c5d7953a175bf5f173ef712e"
+    },
+    {
+      "path": "docs/FOLLOWUP_METHODS.md",
+      "bytes": 5266,
+      "sha256": "82efa660d4125a3f941c55f7bde61f5270c9ce674f93e8f90e1ebe1576cce167"
+    },
+    {
+      "path": "docs/REPRODUCE.md",
+      "bytes": 4652,
+      "sha256": "577b25b87f1f06085d617e49ecdbdc9bebf0f4154f706da016ccd0f73ce44472"
+    },
+    {
+      "path": "docs/RESULTS_AND_LIMITATIONS.md",
+      "bytes": 4484,
+      "sha256": "1dc01748d55e9e14dc16c0de8911a852cc568da2c85176e6734857cf27e483d9"
+    },
+    {
+      "path": "figures/capacity-1200.png",
+      "bytes": 277794,
+      "sha256": "8df61d74d9d750e110d9deae72076e1d68537b359149b03a1445e42c52a14112"
+    },
+    {
+      "path": "figures/capacity-400.png",
+      "bytes": 315130,
+      "sha256": "e22b14ed80972406f648ac5976b8a841fe083fcb86639d8408f72b07635b5b00"
+    },
+    {
+      "path": "figures/feature-strategies.png",
+      "bytes": 92751,
+      "sha256": "7f603ba74f83b18b9e5eb359723e8f99fddaa58c7122db74146015c291299b58"
+    },
+    {
+      "path": "followup/bias-variance.json",
+      "bytes": 29402,
+      "sha256": "bec8e78d244b3b730936dabb62bac3875495411079e139c083fb207595ec2895"
+    },
+    {
+      "path": "followup/ensembles.json",
+      "bytes": 16241,
+      "sha256": "d22103a3479c10a6b7fbb5dcdda4859a55a95f3b65e0e3cd26dfdb30484e941e"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-augmented-landscape.png",
+      "bytes": 145877,
+      "sha256": "cbd1cbec04bd91da8f7436f65f8f7f4e3782a5fcbdc063fbe1989c0b222ab4b4"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-bias-variance-epochs.png",
+      "bytes": 163715,
+      "sha256": "77339aba6e0ea99267d8ff738f06ee6df8ef90932764be4f3142882e39ca7cef"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-bias-variance-samples.png",
+      "bytes": 135630,
+      "sha256": "fcd8a003510aaf337be2aea952c94735dc8d04c996abf59d2e09c67e3b263fba"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-depth-capacity.png",
+      "bytes": 110717,
+      "sha256": "074ce625a5e053f24e5be6c0a1e7c88cf158cd7d097deb9ce42aa9f24e40e836"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-ensemble-voting.png",
+      "bytes": 47075,
+      "sha256": "f5c9647d9257e70177f80037e92fa815b323e28ecc113eb9d397c034b4289c2b"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-none-landscape.png",
+      "bytes": 150300,
+      "sha256": "9cef8e9f4cec388da97b27f3bc9b764a542fbdf800a78d56f5fdcc81597b9e9f"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-reference-comparison.png",
+      "bytes": 36908,
+      "sha256": "1445effd2f4ccf9099831ddd9b2cef0815fa94e21434eea81c39e61674e912df"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-repeat-landscape.png",
+      "bytes": 143366,
+      "sha256": "d46e9b272d81d7e168ea7f038f85fc2081afadfa376dd744dde7b49308ff4146"
+    },
+    {
+      "path": "followup/figures/cats_vs_dogs-width-capacity.png",
+      "bytes": 130708,
+      "sha256": "f32688e316e43dbb2a73d68873f181b6b76b70e1c603adab96bc6e3835e16c17"
+    },
+    {
+      "path": "followup/figures/cifar10-augmented-landscape.png",
+      "bytes": 147140,
+      "sha256": "5e70025a70ebd16ae870e2289fd97f2bac0773b5d85fc03ee4c501809a411076"
+    },
+    {
+      "path": "followup/figures/cifar10-bias-variance-epochs.png",
+      "bytes": 170481,
+      "sha256": "376e2eeb1ee41d881af1cbdea7e1b4f0be46339c0590078aae5c8df283a75368"
+    },
+    {
+      "path": "followup/figures/cifar10-bias-variance-samples.png",
+      "bytes": 135745,
+      "sha256": "118f0e86fbfcfebfa899030ad78ec931290a872ef8277a8d2989de3aa6067b76"
+    },
+    {
+      "path": "followup/figures/cifar10-depth-capacity.png",
+      "bytes": 123452,
+      "sha256": "01b90e4a3dd9675b83a9e4066f09e6040d473774d5a237d3873b32af6b899de0"
+    },
+    {
+      "path": "followup/figures/cifar10-ensemble-voting.png",
+      "bytes": 53763,
+      "sha256": "a9005fb022346023c3d0ded19f8dc4e760f901ca9574e9a0a895064d55b067ef"
+    },
+    {
+      "path": "followup/figures/cifar10-none-landscape.png",
+      "bytes": 145304,
+      "sha256": "6eec98bd7210628cfbba23ed57f77f3cb184f3f4db9f2806a4c0eda934871595"
+    },
+    {
+      "path": "followup/figures/cifar10-reference-comparison.png",
+      "bytes": 36499,
+      "sha256": "a172ad260a1de77cfb0b3f20e39e572f936b94c3d03ec3aaeebeba44afe58c5d"
+    },
+    {
+      "path": "followup/figures/cifar10-repeat-landscape.png",
+      "bytes": 137286,
+      "sha256": "0802c50210cb114423fe51b782763b9204c9d87857b264ada8d76eddd4614e33"
+    },
+    {
+      "path": "followup/figures/cifar10-width-capacity.png",
+      "bytes": 129839,
+      "sha256": "56ed89b094954465ed3a20192157cd8522f8030fa4b520e2ea894f6f7af09774"
+    },
+    {
+      "path": "followup/measurements.csv",
+      "bytes": 10561,
+      "sha256": "a4f83482361e2f14777aae29a7c04934c47e3304587bce685903b4ed3ac46fb9"
+    },
+    {
+      "path": "followup/measurements.json",
+      "bytes": 554549,
+      "sha256": "ebb605ba2e11713708810fb2083a452ca8586232f8dbf7843399872d009b2e57"
+    },
+    {
+      "path": "followup/RESULTS.md",
+      "bytes": 3181,
+      "sha256": "78f6224af8a26cfaf3a37481a65494416a66e32efc1b6e1c4ac91065b8606e1d"
+    },
+    {
+      "path": "followup/SNAPSHOT.json",
+      "bytes": 1466,
+      "sha256": "5c528f2177ad427f777a587deba69df7f78ccc63d93720c64b7d2397dac93d44"
+    },
+    {
+      "path": "neural_tree/ell409_tree/__init__.py",
+      "bytes": 99,
+      "sha256": "bdbd65577e057a59b4b541ffe24c2e8790054a7eb744bd158d22589d1b248318"
+    },
+    {
+      "path": "neural_tree/ell409_tree/__main__.py",
+      "bytes": 30,
+      "sha256": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+    },
+    {
+      "path": "neural_tree/ell409_tree/benchmarks.py",
+      "bytes": 4047,
+      "sha256": "fb1b9acbfa514c80ea1978444a668d2039c0e6d4cfe5624acd208dcadbc402cd"
+    },
+    {
+      "path": "neural_tree/ell409_tree/cli.py",
+      "bytes": 7849,
+      "sha256": "de10a1b3865e52ef3a608ec760b99ea9641e9674af0f40c8530fcc4453ac6815"
+    },
+    {
+      "path": "neural_tree/ell409_tree/common.py",
+      "bytes": 3232,
+      "sha256": "46b96e985828a5e128cf82d43e5a80dc7f6b96d332f9bc243960d5c930ca0c85"
+    },
+    {
+      "path": "neural_tree/ell409_tree/data.py",
+      "bytes": 12154,
+      "sha256": "f4c66327d531d6e1a7672f80b8ff5ec6cb6fb7b5a25af99bdf93564bda4b4d22"
+    },
+    {
+      "path": "neural_tree/ell409_tree/dense_study.py",
+      "bytes": 20139,
+      "sha256": "025f6b499faadcb0911211b188e2e72eee4221a7ee2bec064f1da790c3b46e03"
+    },
+    {
+      "path": "neural_tree/ell409_tree/epoch_history.py",
+      "bytes": 3565,
+      "sha256": "4498fd2106f335d6025227f2bce42b753eee8bbd35fa38b7e83d1921e22aa982"
+    },
+    {
+      "path": "neural_tree/ell409_tree/experiments.py",
+      "bytes": 20099,
+      "sha256": "9dd1d510ed3540d1ffcc42144ead02e5f011bab00696a7e392357ed97737fa4a"
+    },
+    {
+      "path": "neural_tree/ell409_tree/models.py",
+      "bytes": 6134,
+      "sha256": "7cd9310168e7fa0a2ec575b9f515d37ef6af7047933646ad19b3152ad53d0ce6"
+    },
+    {
+      "path": "neural_tree/ell409_tree/packaging.py",
+      "bytes": 907,
+      "sha256": "0318f79542374cea6d1a2c0e13bc3407af1740c2e43b5ebd8c0fc9b77c35347e"
+    },
+    {
+      "path": "neural_tree/ell409_tree/report.py",
+      "bytes": 36039,
+      "sha256": "07e91c1f0bcdbd9f0245f4bfc7407782d4b758a7f4c5a5c5a9aaf1a21bc1786e"
+    },
+    {
+      "path": "neural_tree/ell409_tree/review.py",
+      "bytes": 13106,
+      "sha256": "4aab81b74bc3d8f830582416119cd09a04178d182bd8f12f0e3a80adbd7a6b39"
+    },
+    {
+      "path": "neural_tree/ell409_tree/submission.py",
+      "bytes": 6991,
+      "sha256": "a6b7d36efc62f1724702796707498d499e0bea07990eb4691c2bb8125ab0f792"
+    },
+    {
+      "path": "neural_tree/ell409_tree/train.py",
+      "bytes": 21119,
+      "sha256": "51220b21c0133701cb02fa7e8c687496153f2a05fdb5dec3d506d56b99d4cc84"
+    },
+    {
+      "path": "neural_tree/ell409_tree/visualize.py",
+      "bytes": 7161,
+      "sha256": "0691a35aaca1be335ca21358d299c1be5e8a12ab3b038d2bd7d08869b89ead2b"
+    },
+    {
+      "path": "neural_tree/pyproject.toml",
+      "bytes": 707,
+      "sha256": "3cdc31565e10c4f79bc2d5c7e2f06a1d7dfbabb5c2cfdd4bb8e4901cc2a296fd"
+    },
+    {
+      "path": "neural_tree_v2/pyproject.toml",
+      "bytes": 435,
+      "sha256": "00fb8973664d28de0d039507b2d7481533cd6a99f4c73a1cd9845d45dd78c638"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/__init__.py",
+      "bytes": 65,
+      "sha256": "65035365c632feb14ac0fbc2a1bb98dd6467186ab0530b1449820bfe30370936"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/__main__.py",
+      "bytes": 2408,
+      "sha256": "d815e0189afa1738f14187a84d730efbac92056aebd821ba85676a9928e02661"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/common.py",
+      "bytes": 3809,
+      "sha256": "a5f3e9d5ebe205bdcc5ba534aece3f0ff3108953a465662c0acc7733b9e198f1"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/data.py",
+      "bytes": 4331,
+      "sha256": "79164cbb04e2224d63637c16660803a313ea6cf9788cf4b6b0a7c6be833e5985"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/models.py",
+      "bytes": 4382,
+      "sha256": "4d52619efce4559dbb90e1e7ac8cdbdbf58b10c726a09bb724a416069b270a12"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/study.py",
+      "bytes": 20941,
+      "sha256": "348392bdca8fc8b49fc7629bd45ce1f747e8145e393ecd9e96785c836f97a67a"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/train.py",
+      "bytes": 14323,
+      "sha256": "a4d2c5e9f978425f52c58c21eb15e7e218dfca6f185dd6bec4425594c768cb84"
+    },
+    {
+      "path": "neural_tree_v2/v2_tree/visualize.py",
+      "bytes": 8077,
+      "sha256": "cc94a45d825acc232f3841e704119d346a43f2afd963d0f808bdbe49b4e4f67d"
+    },
+    {
+      "path": "neural_tree_v3/config.json",
+      "bytes": 1268,
+      "sha256": "836ec940f55e7363163a2d841cbb0d85ed6c8770f5cb2171db9651c0711b4148"
+    },
+    {
+      "path": "neural_tree_v3/study.py",
+      "bytes": 27457,
+      "sha256": "b3adc3b4e9f3bf5ec450692259a70193d79eb3ccd7b41feffa60a4492ea348b3"
+    },
+    {
+      "path": "neural_tree_v3/width32_followup.py",
+      "bytes": 20578,
+      "sha256": "ca4bc83c208a319d6ba274adb13f196a05e920a131a105eeaed0e6c95d762027"
+    },
+    {
+      "path": "neural_tree_v4/config.json",
+      "bytes": 1542,
+      "sha256": "7f2271e59cab09d059898a4d2eae1d997d59c6f4b5a99e507cd25c7efb342c0a"
+    },
+    {
+      "path": "neural_tree_v4/random_cnn_study.py",
+      "bytes": 24710,
+      "sha256": "52343c20303322cef3ea4fe65477a4461a2adc3004d6ee64f3388412b30388e3"
+    },
+    {
+      "path": "neural_tree_v5/config.json",
+      "bytes": 1738,
+      "sha256": "86a0a9f8de7f50040118ac5ad6ad410cf019f98a1cdbd8bba7a5f06b5a3e40f5"
+    },
+    {
+      "path": "neural_tree_v5/deploy_noise.py",
+      "bytes": 4652,
+      "sha256": "4902311096b0e287cbc852e7be7d08880b293968ff2eaa592fcd95e52be214ae"
+    },
+    {
+      "path": "neural_tree_v5/followup-config.json",
+      "bytes": 1153,
+      "sha256": "d7de5e895c6e68524a47cf77733dfee5d1bb1e1278231b8f860853e858c3e62c"
+    },
+    {
+      "path": "neural_tree_v5/noise_followup.py",
+      "bytes": 8664,
+      "sha256": "50a73ab56d29de677198ad398403ba926ad58fe248ac50de9e0043943cc3c65f"
+    },
+    {
+      "path": "neural_tree_v5/noise_study.py",
+      "bytes": 27318,
+      "sha256": "555bd162368cea1c963d52a79f3dbf459108ae144da53130e035e47c185bf8d8"
+    },
+    {
+      "path": "neural_tree_v6/analysis.py",
+      "bytes": 7856,
+      "sha256": "367646fc9b3d2c1037e8c53ab94f019d8a2364520da178860909ac50d2ff7213"
+    },
+    {
+      "path": "neural_tree_v6/common.py",
+      "bytes": 2336,
+      "sha256": "4fb589fe280ae16bc557b966ee4cec3afd4f0c9810ea2b11c5e07f13f6972efd"
+    },
+    {
+      "path": "neural_tree_v6/config.json",
+      "bytes": 2350,
+      "sha256": "3556d77b2f571a4fe85c843a943bd6ea99f63583de404f0d9eaf4a73775e509a"
+    },
+    {
+      "path": "neural_tree_v6/data.py",
+      "bytes": 8163,
+      "sha256": "4b848fb8f10c4cea6d28680e4a2bb41d3251e7d4a46d591c5eafa99fecd4a40c"
+    },
+    {
+      "path": "neural_tree_v6/deploy.py",
+      "bytes": 4274,
+      "sha256": "ff859e6d29803e76623787f225342307ffce49d418d70293417eab066f59928d"
+    },
+    {
+      "path": "neural_tree_v6/pilot.json",
+      "bytes": 1131,
+      "sha256": "e3d7b233df0db23b09d3fe7840168d2ed42d9bb138a608a5fc2cfa853b9c5ed9"
+    },
+    {
+      "path": "neural_tree_v6/plots.py",
+      "bytes": 10292,
+      "sha256": "bbbdfcbefa04c40d07e086b75cec49cb115d2bb3c97eb9df10e9a2718dc49799"
+    },
+    {
+      "path": "neural_tree_v6/README.md",
+      "bytes": 11191,
+      "sha256": "2a170270949fd8b81239825c156c62fb9b5bd7faad1601510c8ff9f57eeb7cfc"
+    },
+    {
+      "path": "neural_tree_v6/requirements-lock.txt",
+      "bytes": 101,
+      "sha256": "41379bf6e4cf233896b1352437f0d0af8100809da5f6bc34f688dac245301386"
+    },
+    {
+      "path": "neural_tree_v6/requirements.txt",
+      "bytes": 153,
+      "sha256": "237098fe4615cd2d40e61fa04ed6367bf16c15229af067b17f01c7613f4bdc0e"
+    },
+    {
+      "path": "neural_tree_v6/run.py",
+      "bytes": 20564,
+      "sha256": "2f617ec08676b9ea3835d54053f5036e2205206f9844244a15fa559480244993"
+    },
+    {
+      "path": "neural_tree_v6/tests/test_followup.py",
+      "bytes": 9518,
+      "sha256": "743d54dc58e6650b0028212a35579323ebb796e3b6b3fbd2cab63fd19f342291"
+    },
+    {
+      "path": "neural_tree_v6/train.py",
+      "bytes": 10509,
+      "sha256": "ec8f59247d979e08c89dce1b276ef394d2183782131831912450e33d94258929"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4313,
+      "sha256": "7b67b6de3d9dd202a8cb0f80353ad3577f4c3ace5a754a4b8960a2605399857b"
+    },
+    {
+      "path": "report/ELL409_Previous_Assignment_Report.pdf",
+      "bytes": 1823067,
+      "sha256": "bc4e34ef5edd19b9bb053fe48a6e316392d53bae249245738898520af10b4cec"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 251,
+      "sha256": "bfa7d08a70f675601437566633a96dac8d6153f938e62636c22d8d4b02f98e37"
+    },
+    {
+      "path": "tools/refresh_repository.py",
+      "bytes": 36953,
+      "sha256": "2b5e0f466321c248f10018684c3fcda4a811122ab983e80b3922f0853ffda34b"
+    },
+    {
+      "path": "tools/verify_repository.py",
+      "bytes": 2965,
+      "sha256": "b78a405d70980d187b66494f9536015be1b4d2a5f096edb9b33b6ffc489fd42d"
+    }
+  ],
+  "package_verification": {
+    "followup_tests_passed": 11,
+    "tests_seconds": 296.25,
+    "tests_run_in_packaged_source": true,
+    "documentation_links_checked": true,
+    "archive_hashes_and_browser_limits_verified": true,
+    "verified_ist": "2026-10-20",
+    "note": "Initial pytest default temporary-directory setup was unavailable; all 11 checks passed using an explicit new workspace temporary directory. No training sources were edited."
+  }
+}

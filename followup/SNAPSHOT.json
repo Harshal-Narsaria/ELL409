@@ -1,0 +1,53 @@
+{
+  "captured_ist": "2026-10-20T11:21:48+05:30",
+  "completed_primary_models": 85,
+  "planned_primary_models": 166,
+  "study_complete": false,
+  "worker_progress_at_capture": {
+    "pid": 25504,
+    "status": "running",
+    "planned_primary_models": 166,
+    "completed_primary_models": 85,
+    "started_unix": 1792461924.1591198,
+    "wall_clock_limit_hours": 8.909966282579633,
+    "device": "cuda",
+    "debug_subset": false,
+    "temporary_system_awake_request": true,
+    "stage": "training",
+    "dataset": "cifar10",
+    "updated_unix": 1792475425.2311502,
+    "last_completed_job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.0,
+      "width": 128,
+      "depth": 1,
+      "epochs": 400,
+      "sampler": "bootstrap",
+      "sample_fraction": 1.0,
+      "replicate": 2,
+      "seed": 411
+    },
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.0,
+      "width": 128,
+      "depth": 1,
+      "epochs": 400,
+      "sampler": "bootstrap",
+      "sample_fraction": 1.0,
+      "replicate": 2,
+      "seed": 411
+    },
+    "job_id": "d9f153a1c554d0b3eb",
+    "node": "root.A",
+    "class_index": 1,
+    "epoch": 260,
+    "epochs": 400,
+    "node_examples": 123938,
+    "node_errors": 0,
+    "epoch_seconds": 5.722722299979068
+  },
+  "scope": "Completed configurations only; live worker and unfinished checkpoints are not modified."
+}

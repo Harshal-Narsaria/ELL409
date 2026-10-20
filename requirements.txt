@@ -1,0 +1,9 @@
+# Install a matching torch/torchvision pair for your CPU or CUDA platform first.
+# Historical environment is recorded in neural_tree/requirements-lock.txt.
+numpy>=1.26
+Pillow>=10
+matplotlib>=3.8
+reportlab>=4
+scipy>=1.12
+psutil>=5.9
+pytest>=8

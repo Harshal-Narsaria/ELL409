@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+historical-restored/
+neural_tree/data/
+neural_tree/runs/
+neural_tree_v2/runs/
+neural_tree_v3/runs/
+neural_tree_v4/runs/
+neural_tree_v5/runs/
+neural_tree_v6/runs/
+followup/models/
+followup/landscapes/

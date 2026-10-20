@@ -1,0 +1,689 @@
+[
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.8168529868125916,
+    "mean_member_accuracy": 0.8168529868125916,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.815133273601532,
+    "mean_member_accuracy": 0.8155632019042969,
+    "pairwise_disagreement": 0.020349670201539993,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.8155632019042969,
+    "mean_member_accuracy": 0.8155632019042969,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.815133273601532,
+    "mean_member_accuracy": 0.8141301274299622,
+    "pairwise_disagreement": 0.0329607337868462,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7979363799095154,
+    "mean_member_accuracy": 0.7979363799095154,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.8000859618186951,
+    "mean_member_accuracy": 0.7983663082122803,
+    "pairwise_disagreement": 0.11980509757995605,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.8168529868125916,
+    "mean_member_accuracy": 0.8168529868125916,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.8177127838134766,
+    "mean_member_accuracy": 0.8169962763786316,
+    "pairwise_disagreement": 0.020922900487979252,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.8172829151153564,
+    "mean_member_accuracy": 0.8172829151153564,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.8168529868125916,
+    "mean_member_accuracy": 0.8161364197731018,
+    "pairwise_disagreement": 0.0455717978378137,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7755804061889648,
+    "mean_member_accuracy": 0.7755804061889648,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 320557,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cats_vs_dogs",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      18608,
+      18608,
+      18608
+    ],
+    "unique_originals": [
+      11792,
+      11801,
+      11800
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7777299880981445,
+    "mean_member_accuracy": 0.7731441855430603,
+    "pairwise_disagreement": 0.11923186977704366,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 387139,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7775999903678894,
+    "mean_member_accuracy": 0.7775999903678894,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7824000120162964,
+    "mean_member_accuracy": 0.779533326625824,
+    "pairwise_disagreement": 0.06893333544333775,
+    "validation_ties": 26,
+    "ensemble_total_parameters": 1287028,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7603999972343445,
+    "mean_member_accuracy": 0.7603999972343445,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7738000154495239,
+    "mean_member_accuracy": 0.7645333409309387,
+    "pairwise_disagreement": 0.14760000010331473,
+    "validation_ties": 142,
+    "ensemble_total_parameters": 1287028,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "augmented",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447
+    ],
+    "replicates": [
+      0,
+      1
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7404000163078308,
+    "mean_member_accuracy": 0.7404000163078308,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7802000045776367,
+    "mean_member_accuracy": 0.7802000045776367,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 20,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7817999720573425,
+    "mean_member_accuracy": 0.7790666818618774,
+    "pairwise_disagreement": 0.044466666877269745,
+    "validation_ties": 11,
+    "ensemble_total_parameters": 1287028,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7730000019073486,
+    "mean_member_accuracy": 0.7730000019073486,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 100,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7806000113487244,
+    "mean_member_accuracy": 0.7725333571434021,
+    "pairwise_disagreement": 0.11806666602691014,
+    "validation_ties": 75,
+    "ensemble_total_parameters": 1287028,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 1,
+    "validation_accuracy": 0.7473999857902527,
+    "mean_member_accuracy": 0.7473999857902527,
+    "pairwise_disagreement": 0.0,
+    "validation_ties": 0,
+    "ensemble_total_parameters": 621208,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  },
+  {
+    "dataset": "cifar10",
+    "augmentation": "none",
+    "sample_fraction": 1.0,
+    "epochs_per_child": 400,
+    "depth": 1,
+    "width": 128,
+    "sample_draws": [
+      45000,
+      45000,
+      45000
+    ],
+    "unique_originals": [
+      28339,
+      28447,
+      28381
+    ],
+    "replicates": [
+      0,
+      1,
+      2
+    ],
+    "members": 3,
+    "validation_accuracy": 0.7680000066757202,
+    "mean_member_accuracy": 0.754800021648407,
+    "pairwise_disagreement": 0.1631333331267039,
+    "validation_ties": 127,
+    "ensemble_total_parameters": 1287028,
+    "voting": "One complete classifier contributes one final class label; ties use smallest class index."
+  }
+]

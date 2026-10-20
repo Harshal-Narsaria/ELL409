@@ -1,0 +1,79 @@
+{
+  "datasets": [
+    "cats_vs_dogs",
+    "cifar10"
+  ],
+  "feature_source": "neural_tree_v3/runs/cnn80-depth",
+  "seed": 409,
+  "augmentation_seed": 190409,
+  "views": 3,
+  "padding": 4,
+  "feature_batch": 128,
+  "root_policy": "Frozen earlier CNN80 classification margins; only correction nodes and signed parent coefficients learn.",
+  "widths": [
+    16,
+    32,
+    64,
+    128,
+    256,
+    512
+  ],
+  "capacity_epochs": 400,
+  "capacity_depth": 1,
+  "depth_width": 64,
+  "depths": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    12
+  ],
+  "sample_fractions": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "epochs": [
+    20,
+    100,
+    400
+  ],
+  "variance_replicates": 3,
+  "ensemble_members": 3,
+  "variance_width": 128,
+  "noise_rates": [
+    0.0,
+    0.15
+  ],
+  "reuse_noise_map": "neural_tree_v5/runs/label-noise",
+  "repeat_seeds": [
+    410,
+    411
+  ],
+  "batch": 1024,
+  "eval_batch": 2048,
+  "lr": 0.001,
+  "parent_epochs": 150,
+  "checkpoint_every": 20,
+  "max_nodes_per_tree": 127,
+  "landscape": {
+    "grid": 15,
+    "examples": 512,
+    "radius": 0.25,
+    "seed": 290409
+  },
+  "regularization": {
+    "weight_decay": 0,
+    "dropout": 0,
+    "label_smoothing": 0
+  },
+  "test_policy": "Reused original test partitions, exploratory. A fixed six-model reference comparison is evaluated once all six predeclared reference models finish. Remaining tests wait for the full primary and training-selected repeat plans. No test score changes the plan or selects models.",
+  "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+  "noise_widths": [
+    32,
+    128,
+    512
+  ],
+  "profile_reason": "Training-only diagnostic: the initial width-32, 200-epoch full Cats control remained at 83.72% training accuracy, close to its frozen root. Using final instead of minimum-error child checkpoints changed only five predictions. Increase capacity/optimization and prioritize all required investigations rather than attribute the bottleneck to checkpoint selection. No test score selected this revision."
+}
