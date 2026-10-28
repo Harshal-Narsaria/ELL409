@@ -1,0 +1,12 @@
+{
+  "dataset": "cifar10",
+  "width": 32,
+  "seed": 409,
+  "depths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20],
+  "repeat_seeds": [410, 411],
+  "repeat_depths": [0, 10, 20],
+  "policies": ["original", "classification_refit"],
+  "source_run": "runs/cnn80-depth/cifar10",
+  "source_config": "config.json",
+  "policy": "Exploratory follow-up motivated by previously inspected test curves. Preserve original results. Reuse the same frozen CNN, features, splits and width-32 base checkpoints. Extend the original method and separately compare a signed parent refit accepting positive margins below one. New base tasks use the original 200-epoch schedule and optimizer. Repeat fixed depths with two fresh correction-network seeds. Never use validation/test metrics to fit, grow, stop or select models. Saturated repeated checkpoints do not count as extra capacity."
+}

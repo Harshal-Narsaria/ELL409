@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# Datasets, cached features and training checkpoints are created locally by the scripts.
+neural_tree*/data/
+neural_tree*/runs/
+neural_tree*/results/
+neural_tree*/output/

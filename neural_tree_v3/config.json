@@ -1,0 +1,23 @@
+{
+  "datasets": ["cats_vs_dogs", "cifar10"],
+  "seed": 409,
+  "resolution": 32,
+  "cnn_target_accuracy": 0.8,
+  "cnn_max_epochs": 60,
+  "cnn_lr": 0.001,
+  "cnn_batch": 64,
+  "widths": [32, 64, 128, 256],
+  "depths": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "max_nodes_per_tree": 2047,
+  "max_correction_parameters": 30000000,
+  "mlp_epochs": 200,
+  "mlp_batch": 1024,
+  "lr": 0.001,
+  "eval_batch": 1024,
+  "correction_epochs": 150,
+  "near_perfect": 0.995,
+  "repeat_seeds": [410, 411],
+  "regularization": {"dropout": 0, "weight_decay": 0, "label_smoothing": 0, "augmentation": false},
+  "uses_test_during_sweep": true,
+  "policy": "CNN stops at the first full-training evaluation reaching 80%, then its trunk AND classification head remain frozen. Training continues only in error-correction children and signed correction strengths. Predeclared width/depth grid; test scores never select CNN checkpoints, determine growth or select repeat depths. Depth extensions reuse identical existing base networks and tasks, add deeper children and refit strengths. Natural topology/parameter plateaus and optimization limits are reported. Test curves are exploratory repeated measurements on the original test splits already used in Version 1. No guaranteed double descent."
+}

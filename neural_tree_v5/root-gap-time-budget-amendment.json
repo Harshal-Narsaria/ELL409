@@ -1,0 +1,15 @@
+{
+  "declared_unix": 1791740609.877646,
+  "before_any_new_test_evaluation": true,
+  "primary_training_cutoff_unix": 1791741840,
+  "fallback_rule": "If the five-width grid is unfinished at 18:04 UTC, evaluate every model with a completed metrics.json and 1200-epoch base checkpoints. Select no model by validation or test score. Exclude incomplete widths and label the study partial/time-limited. Keep the original five widths and all training settings unchanged; document the incomplete widths. The time-based fallback applies only to the new root-width extension, not to previous completed studies.",
+  "report_finalization_deadline_unix": 1791742140,
+  "revisions": [
+    {
+      "declared_unix": 1791740825.0329468,
+      "previous_cutoff_unix": 1791741600,
+      "new_cutoff_unix": 1791741840,
+      "reason": "Allocate four additional minutes from the nine-minute final checking reserve to training, retaining five minutes before the user one-hour window ends. No new test scores have been evaluated."
+    }
+  ]
+}

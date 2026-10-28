@@ -1,0 +1,16 @@
+[
+  {
+    "members": 1,
+    "test_accuracy": 0.8177127838134766,
+    "pairwise_disagreement": 0.0,
+    "epochs_per_child": 20,
+    "augmentation": "none"
+  },
+  {
+    "members": 3,
+    "test_accuracy": 0.819862425327301,
+    "pairwise_disagreement": 0.022069361060857773,
+    "epochs_per_child": 20,
+    "augmentation": "none"
+  }
+]

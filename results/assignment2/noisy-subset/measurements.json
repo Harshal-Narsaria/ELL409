@@ -1,0 +1,2967 @@
+[
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 32,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "92e24b03a06a6a5928",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 83310,
+      "active_tree_parameters": 83310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 371608,
+      "active_total_parameters": 371608
+    },
+    "seconds_this_invocation": 427.280999999959,
+    "model_path": "models/0e0b93d8e215d95f1a/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/0e0b93d8e215d95f1a/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 24,
+      "accuracy": 0.9940000176429749,
+      "loss": 0.07810147851705551,
+      "brier": 0.02347550541162491
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 560,
+      "accuracy": 0.8600000143051147,
+      "loss": 2.728633403778076,
+      "brier": 0.2859748303890228
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 24,
+      "accuracy": 0.9940000176429749,
+      "loss": 0.07810147851705551,
+      "brier": 0.02347550541162491
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1878,
+      "accuracy": 0.6244000196456909,
+      "loss": 4.445646286010742,
+      "brier": 0.6491715908050537
+    },
+    "convergence_flags": [
+      {
+        "node": "3:root.A",
+        "best_errors": 1,
+        "best_loss": 0.007624938618391752,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.008461660705506802,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.A",
+        "best_errors": 1,
+        "best_loss": 0.005979601293802261,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.006005065981298685,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.A",
+        "best_errors": 0,
+        "best_loss": 0.0057495576329529285,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.005950296297669411,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3915,
+      "accuracy": 0.6085000038146973,
+      "loss": 4.808887481689453,
+      "brier": 0.6802762150764465
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 32,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "7f0ea19a68279ccacf",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 83310,
+      "active_tree_parameters": 83310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 371608,
+      "active_total_parameters": 371608
+    },
+    "seconds_this_invocation": 911.140999999945,
+    "model_path": "models/71cbc3f497642c517c/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/71cbc3f497642c517c/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 581,
+      "accuracy": 0.9515833258628845,
+      "loss": 0.2683539092540741,
+      "brier": 0.08735409379005432
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 521,
+      "accuracy": 0.8697500228881836,
+      "loss": 1.3295316696166992,
+      "brier": 0.23324690759181976
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 207,
+      "accuracy": 0.9482499957084656,
+      "loss": 0.3003307580947876,
+      "brier": 0.09072387218475342
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1824,
+      "accuracy": 0.635200023651123,
+      "loss": 2.7471625804901123,
+      "brier": 0.6101495027542114
+    },
+    "convergence_flags": [
+      {
+        "node": "2:root.B",
+        "best_errors": 17,
+        "best_loss": 0.06494651734828949,
+        "epoch": 1000,
+        "last_errors": 17,
+        "last_loss": 0.06494651734828949,
+        "loss_still_falling": true
+      },
+      {
+        "node": "3:root.A",
+        "best_errors": 21,
+        "best_loss": 0.014265120960772038,
+        "epoch": 1000,
+        "last_errors": 33,
+        "last_loss": 0.016280265524983406,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.A",
+        "best_errors": 2,
+        "best_loss": 0.005033612716943026,
+        "epoch": 1000,
+        "last_errors": 9,
+        "last_loss": 0.007592214737087488,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.B",
+        "best_errors": 1,
+        "best_loss": 0.01894223876297474,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.01923583820462227,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.A",
+        "best_errors": 3,
+        "best_loss": 0.005408349446952343,
+        "epoch": 1000,
+        "last_errors": 4,
+        "last_loss": 0.006441203411668539,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.B",
+        "best_errors": 1,
+        "best_loss": 0.019940786063671112,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.019940786063671112,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.A",
+        "best_errors": 426,
+        "best_loss": 0.10059407353401184,
+        "epoch": 1000,
+        "last_errors": 456,
+        "last_loss": 0.10705485194921494,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.B",
+        "best_errors": 1,
+        "best_loss": 0.03157714009284973,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.03157714009284973,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3587,
+      "accuracy": 0.6413000226020813,
+      "loss": 2.590374708175659,
+      "brier": 0.59699547290802
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 128,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "47df3570320dc50f27",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 332910,
+      "active_tree_parameters": 332910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 621208,
+      "active_total_parameters": 621208
+    },
+    "seconds_this_invocation": 376.9220000000205,
+    "model_path": "models/7577fa8740b19d5cad/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/7577fa8740b19d5cad/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04488534480333328,
+      "brier": 0.017892492935061455
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8705804347991943,
+      "brier": 0.2965307831764221
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04488534480333328,
+      "brier": 0.017892492935061455
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1773,
+      "accuracy": 0.6453999876976013,
+      "loss": 4.036679267883301,
+      "brier": 0.5957338213920593
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3589,
+      "accuracy": 0.6410999894142151,
+      "loss": 4.236794948577881,
+      "brier": 0.606635332107544
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 128,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "7fa32fe34bdbc8daec",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 332910,
+      "active_tree_parameters": 332910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 621208,
+      "active_total_parameters": 621208
+    },
+    "seconds_this_invocation": 472.469000000041,
+    "model_path": "models/1cdf31fb27803bdf8e/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/1cdf31fb27803bdf8e/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.040396880358457565,
+      "brier": 0.01523724477738142
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.004777431488037,
+      "brier": 0.2913134694099426
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03328917920589447,
+      "brier": 0.011977623216807842
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1908,
+      "accuracy": 0.618399977684021,
+      "loss": 4.538466453552246,
+      "brier": 0.6429165005683899
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3775,
+      "accuracy": 0.6225000023841858,
+      "loss": 4.546837329864502,
+      "brier": 0.6363056898117065
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 512,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "fb6609a2db62165f57",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 1331310,
+      "active_tree_parameters": 1331310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 1619608,
+      "active_total_parameters": 1619608
+    },
+    "seconds_this_invocation": 920.6720000000205,
+    "model_path": "models/70de359bd7b279b589/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/70de359bd7b279b589/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04773566126823425,
+      "brier": 0.019050156697630882
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8816254138946533,
+      "brier": 0.2976841628551483
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04773566126823425,
+      "brier": 0.019050156697630882
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1675,
+      "accuracy": 0.6650000214576721,
+      "loss": 3.456827402114868,
+      "brier": 0.5509657263755798
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3387,
+      "accuracy": 0.661300003528595,
+      "loss": 3.660649299621582,
+      "brier": 0.5636171102523804
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 512,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "c437d63877a4cdb235",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 1331310,
+      "active_tree_parameters": 1331310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 1619608,
+      "active_total_parameters": 1619608
+    },
+    "seconds_this_invocation": 1654.609999999986,
+    "model_path": "models/5451e417f39acdbdb5/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/5451e417f39acdbdb5/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04030827432870865,
+      "brier": 0.015039155259728432
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.003236770629883,
+      "brier": 0.2912134528160095
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03246577829122543,
+      "brier": 0.011318576522171497
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1792,
+      "accuracy": 0.6416000127792358,
+      "loss": 3.99851131439209,
+      "brier": 0.5933496952056885
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3560,
+      "accuracy": 0.6439999938011169,
+      "loss": 4.000396728515625,
+      "brier": 0.5920703411102295
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 1024,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "4ddbaf113c0d660173",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 2662510,
+      "active_tree_parameters": 2662510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 2950808,
+      "active_total_parameters": 2950808
+    },
+    "seconds_this_invocation": 516.954000000027,
+    "model_path": "models/bc25194062120a6f25/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/bc25194062120a6f25/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04898965358734131,
+      "brier": 0.0196613147854805
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.881293535232544,
+      "brier": 0.29826363921165466
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04898965358734131,
+      "brier": 0.0196613147854805
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1654,
+      "accuracy": 0.6692000031471252,
+      "loss": 3.2457356452941895,
+      "brier": 0.5368912816047668
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3308,
+      "accuracy": 0.6692000031471252,
+      "loss": 3.3835465908050537,
+      "brier": 0.5429223775863647
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 1024,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "3aabb25640f9bf2144",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 2662510,
+      "active_tree_parameters": 2662510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 2950808,
+      "active_total_parameters": 2950808
+    },
+    "seconds_this_invocation": 2764.7029999999795,
+    "model_path": "models/2176e5ca09c77ca983/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/2176e5ca09c77ca983/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03996769338846207,
+      "brier": 0.014934473671019077
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.0098156929016113,
+      "brier": 0.291679322719574
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03288481757044792,
+      "brier": 0.011720708571374416
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1733,
+      "accuracy": 0.6534000039100647,
+      "loss": 3.825139045715332,
+      "brier": 0.5720518231391907
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3474,
+      "accuracy": 0.6525999903678894,
+      "loss": 3.8775088787078857,
+      "brier": 0.5756125450134277
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "3dc92a8b6341c46f33",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 3019.984999999986,
+    "model_path": "models/c099a1fe711c4f0d5e/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/c099a1fe711c4f0d5e/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04906244948506355,
+      "brier": 0.01956821419298649
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.876120090484619,
+      "brier": 0.2981703281402588
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04906244948506355,
+      "brier": 0.01956821419298649
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1607,
+      "accuracy": 0.678600013256073,
+      "loss": 2.9960837364196777,
+      "brier": 0.517583966255188
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3244,
+      "accuracy": 0.675599992275238,
+      "loss": 3.2112972736358643,
+      "brier": 0.529526948928833
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "0b566d9660aa1add0f",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 2426.0160000000615,
+    "model_path": "models/b640e0c132e1bd4a66/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/b640e0c132e1bd4a66/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.040609147399663925,
+      "brier": 0.015230144374072552
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.010385513305664,
+      "brier": 0.29190587997436523
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03323021158576012,
+      "brier": 0.011915135197341442
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1719,
+      "accuracy": 0.6561999917030334,
+      "loss": 3.672098159790039,
+      "brier": 0.5648135542869568
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3442,
+      "accuracy": 0.6557999849319458,
+      "loss": 3.6714391708374023,
+      "brier": 0.5681342482566833
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 8,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "e9fcd278dbff191891",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 20910,
+      "active_tree_parameters": 19866,
+      "nodes": 30,
+      "active_nodes": 29,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 309208,
+      "active_total_parameters": 308164
+    },
+    "seconds_this_invocation": 544.1089999999385,
+    "model_path": "models/428c1349fcaad26814/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/428c1349fcaad26814/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 720,
+      "accuracy": 0.8199999928474426,
+      "loss": 1.0320448875427246,
+      "brier": 0.2899009883403778
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 486,
+      "accuracy": 0.8784999847412109,
+      "loss": 0.4008396565914154,
+      "brier": 0.18007232248783112
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 720,
+      "accuracy": 0.8199999928474426,
+      "loss": 1.0320448875427246,
+      "brier": 0.2899009883403778
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1431,
+      "accuracy": 0.7138000130653381,
+      "loss": 1.129635214805603,
+      "brier": 0.432466059923172
+    },
+    "convergence_flags": [
+      {
+        "node": "0:root.A",
+        "best_errors": 87,
+        "best_loss": 0.07422249019145966,
+        "epoch": 1000,
+        "last_errors": 92,
+        "last_loss": 0.07463733851909637,
+        "loss_still_falling": true
+      },
+      {
+        "node": "0:root.B",
+        "best_errors": 3,
+        "best_loss": 0.07625357806682587,
+        "epoch": 1000,
+        "last_errors": 3,
+        "last_loss": 0.07625357806682587,
+        "loss_still_falling": true
+      },
+      {
+        "node": "1:root.B",
+        "best_errors": 2,
+        "best_loss": 0.05287716165184975,
+        "epoch": 1000,
+        "last_errors": 2,
+        "last_loss": 0.05287716165184975,
+        "loss_still_falling": true
+      },
+      {
+        "node": "2:root.A",
+        "best_errors": 118,
+        "best_loss": 0.5644586086273193,
+        "epoch": 1000,
+        "last_errors": 154,
+        "last_loss": 0.11584868282079697,
+        "loss_still_falling": true
+      },
+      {
+        "node": "2:root.B",
+        "best_errors": 28,
+        "best_loss": 0.15348592400550842,
+        "epoch": 1000,
+        "last_errors": 28,
+        "last_loss": 0.15348592400550842,
+        "loss_still_falling": true
+      },
+      {
+        "node": "3:root.A",
+        "best_errors": 348,
+        "best_loss": 0.22519294917583466,
+        "epoch": 1000,
+        "last_errors": 362,
+        "last_loss": 0.22894634306430817,
+        "loss_still_falling": true
+      },
+      {
+        "node": "3:root.B",
+        "best_errors": 10,
+        "best_loss": 0.11127148568630219,
+        "epoch": 1000,
+        "last_errors": 10,
+        "last_loss": 0.11127148568630219,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.A",
+        "best_errors": 209,
+        "best_loss": 0.14966250956058502,
+        "epoch": 1000,
+        "last_errors": 211,
+        "last_loss": 0.1519874930381775,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.B",
+        "best_errors": 11,
+        "best_loss": 0.08344576507806778,
+        "epoch": 1000,
+        "last_errors": 11,
+        "last_loss": 0.08344576507806778,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.A",
+        "best_errors": 179,
+        "best_loss": 0.5575050711631775,
+        "epoch": 1000,
+        "last_errors": 192,
+        "last_loss": 0.12928903102874756,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.B",
+        "best_errors": 14,
+        "best_loss": 0.22186613082885742,
+        "epoch": 1000,
+        "last_errors": 14,
+        "last_loss": 0.22186613082885742,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.B",
+        "best_errors": 21,
+        "best_loss": 0.2079537808895111,
+        "epoch": 1000,
+        "last_errors": 21,
+        "last_loss": 0.2079537808895111,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.A",
+        "best_errors": 102,
+        "best_loss": 0.08258378505706787,
+        "epoch": 1000,
+        "last_errors": 104,
+        "last_loss": 0.08309416472911835,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.B",
+        "best_errors": 13,
+        "best_loss": 0.11041141301393509,
+        "epoch": 1000,
+        "last_errors": 13,
+        "last_loss": 0.11043305695056915,
+        "loss_still_falling": true
+      },
+      {
+        "node": "8:root.A",
+        "best_errors": 46,
+        "best_loss": 0.037722669541835785,
+        "epoch": 1000,
+        "last_errors": 47,
+        "last_loss": 0.03802170976996422,
+        "loss_still_falling": true
+      },
+      {
+        "node": "8:root.B",
+        "best_errors": 1,
+        "best_loss": 0.04353974014520645,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.04355762153863907,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.A",
+        "best_errors": 262,
+        "best_loss": 0.21596179902553558,
+        "epoch": 1000,
+        "last_errors": 269,
+        "last_loss": 0.2158392071723938,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.B",
+        "best_errors": 5,
+        "best_loss": 0.08286669850349426,
+        "epoch": 1000,
+        "last_errors": 5,
+        "last_loss": 0.08286669850349426,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 2963,
+      "accuracy": 0.7037000060081482,
+      "loss": 1.2067573070526123,
+      "brier": 0.45250797271728516
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 8,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "bb29bc9a35154fa2ae",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 20910,
+      "active_tree_parameters": 19866,
+      "nodes": 30,
+      "active_nodes": 29,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 309208,
+      "active_total_parameters": 308164
+    },
+    "seconds_this_invocation": 1084.4679999999935,
+    "model_path": "models/b795e9dffac95c4234/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/b795e9dffac95c4234/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 2969,
+      "accuracy": 0.7525833249092102,
+      "loss": 1.3595916032791138,
+      "brier": 0.3876293897628784
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 538,
+      "accuracy": 0.8654999732971191,
+      "loss": 0.3928471505641937,
+      "brier": 0.190884068608284
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 888,
+      "accuracy": 0.777999997138977,
+      "loss": 1.3797862529754639,
+      "brier": 0.3554520905017853
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1320,
+      "accuracy": 0.7360000014305115,
+      "loss": 0.9332219958305359,
+      "brier": 0.38770779967308044
+    },
+    "convergence_flags": [
+      {
+        "node": "1:root.A",
+        "best_errors": 674,
+        "best_loss": 0.16715019941329956,
+        "epoch": 1000,
+        "last_errors": 691,
+        "last_loss": 0.17075084149837494,
+        "loss_still_falling": true
+      },
+      {
+        "node": "1:root.B",
+        "best_errors": 47,
+        "best_loss": 0.12876905500888824,
+        "epoch": 1000,
+        "last_errors": 50,
+        "last_loss": 0.13181376457214355,
+        "loss_still_falling": true
+      },
+      {
+        "node": "3:root.B",
+        "best_errors": 142,
+        "best_loss": 0.23020966351032257,
+        "epoch": 1000,
+        "last_errors": 142,
+        "last_loss": 0.23020966351032257,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.A",
+        "best_errors": 847,
+        "best_loss": 0.5685843825340271,
+        "epoch": 1000,
+        "last_errors": 1230,
+        "last_loss": 0.2627016305923462,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.B",
+        "best_errors": 128,
+        "best_loss": 0.2646692991256714,
+        "epoch": 1000,
+        "last_errors": 131,
+        "last_loss": 0.2652363181114197,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.B",
+        "best_errors": 123,
+        "best_loss": 0.2429419606924057,
+        "epoch": 1000,
+        "last_errors": 123,
+        "last_loss": 0.2429419606924057,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.A",
+        "best_errors": 970,
+        "best_loss": 0.2167428582906723,
+        "epoch": 1000,
+        "last_errors": 998,
+        "last_loss": 0.22710634768009186,
+        "loss_still_falling": true
+      },
+      {
+        "node": "8:root.A",
+        "best_errors": 341,
+        "best_loss": 0.08468940854072571,
+        "epoch": 1000,
+        "last_errors": 356,
+        "last_loss": 0.08846500515937805,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.A",
+        "best_errors": 1152,
+        "best_loss": 0.271053284406662,
+        "epoch": 1000,
+        "last_errors": 1152,
+        "last_loss": 0.271053284406662,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 2659,
+      "accuracy": 0.7340999841690063,
+      "loss": 0.9752206802368164,
+      "brier": 0.3975381851196289
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 16,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "35de66fd2ef506e35b",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 41710,
+      "active_tree_parameters": 41710,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 330008,
+      "active_total_parameters": 330008
+    },
+    "seconds_this_invocation": 442.4529999999795,
+    "model_path": "models/c93c790c5859ec47a3/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/c93c790c5859ec47a3/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 379,
+      "accuracy": 0.9052500128746033,
+      "loss": 0.5871873497962952,
+      "brier": 0.16695870459079742
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 414,
+      "accuracy": 0.8964999914169312,
+      "loss": 0.4229407012462616,
+      "brier": 0.1719096302986145
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 379,
+      "accuracy": 0.9052500128746033,
+      "loss": 0.5871873497962952,
+      "brier": 0.16695870459079742
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1495,
+      "accuracy": 0.7009999752044678,
+      "loss": 1.3803906440734863,
+      "brier": 0.48084205389022827
+    },
+    "convergence_flags": [
+      {
+        "node": "0:root.A",
+        "best_errors": 8,
+        "best_loss": 0.01643083244562149,
+        "epoch": 1000,
+        "last_errors": 9,
+        "last_loss": 0.01647479273378849,
+        "loss_still_falling": true
+      },
+      {
+        "node": "1:root.A",
+        "best_errors": 3,
+        "best_loss": 0.007540093269199133,
+        "epoch": 1000,
+        "last_errors": 4,
+        "last_loss": 0.0076707410626113415,
+        "loss_still_falling": true
+      },
+      {
+        "node": "2:root.A",
+        "best_errors": 7,
+        "best_loss": 0.014792991802096367,
+        "epoch": 1000,
+        "last_errors": 7,
+        "last_loss": 0.014792991802096367,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.A",
+        "best_errors": 47,
+        "best_loss": 0.041038475930690765,
+        "epoch": 1000,
+        "last_errors": 49,
+        "last_loss": 0.041421063244342804,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.A",
+        "best_errors": 33,
+        "best_loss": 0.028630830347537994,
+        "epoch": 1000,
+        "last_errors": 34,
+        "last_loss": 0.02962545119225979,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.A",
+        "best_errors": 32,
+        "best_loss": 0.038433171808719635,
+        "epoch": 1000,
+        "last_errors": 35,
+        "last_loss": 0.038969989866018295,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.A",
+        "best_errors": 10,
+        "best_loss": 0.019854160025715828,
+        "epoch": 1000,
+        "last_errors": 10,
+        "last_loss": 0.019854160025715828,
+        "loss_still_falling": true
+      },
+      {
+        "node": "8:root.A",
+        "best_errors": 4,
+        "best_loss": 0.011034422554075718,
+        "epoch": 1000,
+        "last_errors": 5,
+        "last_loss": 0.01117666531354189,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.A",
+        "best_errors": 3,
+        "best_loss": 0.011409196071326733,
+        "epoch": 1000,
+        "last_errors": 3,
+        "last_loss": 0.01148265041410923,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3059,
+      "accuracy": 0.694100022315979,
+      "loss": 1.4368666410446167,
+      "brier": 0.49511757493019104
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 16,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "a823148e526aaa0452",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 41710,
+      "active_tree_parameters": 41710,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 330008,
+      "active_total_parameters": 330008
+    },
+    "seconds_this_invocation": 1072.719000000041,
+    "model_path": "models/3961f60e6b2369d217/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/3961f60e6b2369d217/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 1700,
+      "accuracy": 0.8583333492279053,
+      "loss": 0.7064500451087952,
+      "brier": 0.2278764843940735
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 475,
+      "accuracy": 0.8812500238418579,
+      "loss": 0.41029873490333557,
+      "brier": 0.17934106290340424
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 557,
+      "accuracy": 0.8607500195503235,
+      "loss": 0.7546657919883728,
+      "brier": 0.22231660783290863
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1518,
+      "accuracy": 0.696399986743927,
+      "loss": 1.3167614936828613,
+      "brier": 0.47667020559310913
+    },
+    "convergence_flags": [
+      {
+        "node": "0:root.A",
+        "best_errors": 90,
+        "best_loss": 0.02792191505432129,
+        "epoch": 1000,
+        "last_errors": 109,
+        "last_loss": 0.030566805973649025,
+        "loss_still_falling": true
+      },
+      {
+        "node": "1:root.A",
+        "best_errors": 16,
+        "best_loss": 0.007475808262825012,
+        "epoch": 1000,
+        "last_errors": 16,
+        "last_loss": 0.0077705481089651585,
+        "loss_still_falling": true
+      },
+      {
+        "node": "1:root.B",
+        "best_errors": 3,
+        "best_loss": 0.037764497101306915,
+        "epoch": 1000,
+        "last_errors": 5,
+        "last_loss": 0.0386209711432457,
+        "loss_still_falling": true
+      },
+      {
+        "node": "2:root.B",
+        "best_errors": 69,
+        "best_loss": 0.1312475949525833,
+        "epoch": 1000,
+        "last_errors": 69,
+        "last_loss": 0.1312475949525833,
+        "loss_still_falling": true
+      },
+      {
+        "node": "3:root.B",
+        "best_errors": 32,
+        "best_loss": 0.09670677036046982,
+        "epoch": 1000,
+        "last_errors": 36,
+        "last_loss": 0.09544061869382858,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.A",
+        "best_errors": 335,
+        "best_loss": 0.08720576763153076,
+        "epoch": 1000,
+        "last_errors": 403,
+        "last_loss": 0.09910091012716293,
+        "loss_still_falling": true
+      },
+      {
+        "node": "5:root.B",
+        "best_errors": 26,
+        "best_loss": 0.08753424137830734,
+        "epoch": 1000,
+        "last_errors": 34,
+        "last_loss": 0.08930371701717377,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.A",
+        "best_errors": 906,
+        "best_loss": 0.19890813529491425,
+        "epoch": 1000,
+        "last_errors": 964,
+        "last_loss": 0.21071942150592804,
+        "loss_still_falling": true
+      },
+      {
+        "node": "6:root.B",
+        "best_errors": 19,
+        "best_loss": 0.06648806482553482,
+        "epoch": 1000,
+        "last_errors": 20,
+        "last_loss": 0.06646575778722763,
+        "loss_still_falling": true
+      },
+      {
+        "node": "7:root.A",
+        "best_errors": 243,
+        "best_loss": 0.06144702807068825,
+        "epoch": 1000,
+        "last_errors": 273,
+        "last_loss": 0.06759245693683624,
+        "loss_still_falling": true
+      },
+      {
+        "node": "8:root.A",
+        "best_errors": 15,
+        "best_loss": 0.0081933056935668,
+        "epoch": 1000,
+        "last_errors": 16,
+        "last_loss": 0.009031976573169231,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.A",
+        "best_errors": 53,
+        "best_loss": 0.018930552527308464,
+        "epoch": 1000,
+        "last_errors": 53,
+        "last_loss": 0.018930552527308464,
+        "loss_still_falling": true
+      },
+      {
+        "node": "9:root.B",
+        "best_errors": 6,
+        "best_loss": 0.04210352897644043,
+        "epoch": 1000,
+        "last_errors": 6,
+        "last_loss": 0.04210352897644043,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3126,
+      "accuracy": 0.6873999834060669,
+      "loss": 1.3480170965194702,
+      "brier": 0.4921570420265198
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "8419371e3a01b7c35c",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 415.23499999998603,
+    "model_path": "models/f9e6b6085f7e6c5dd9/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/f9e6b6085f7e6c5dd9/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04357147216796875,
+      "brier": 0.017261764034628868
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8750648498535156,
+      "brier": 0.29590263962745667
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04357147216796875,
+      "brier": 0.017261764034628868
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1774,
+      "accuracy": 0.6452000141143799,
+      "loss": 4.224758625030518,
+      "brier": 0.6034641265869141
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3715,
+      "accuracy": 0.6284999847412109,
+      "loss": 4.603095054626465,
+      "brier": 0.6372982859611511
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "390f1ddaac8fd805e3",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 972.4689999999246,
+    "model_path": "models/77630589dc6e4469e7/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/77630589dc6e4469e7/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 124,
+      "accuracy": 0.9896666407585144,
+      "loss": 0.09521262347698212,
+      "brier": 0.031038926914334297
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 552,
+      "accuracy": 0.8619999885559082,
+      "loss": 2.5584068298339844,
+      "brier": 0.2786991000175476
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 44,
+      "accuracy": 0.9890000224113464,
+      "loss": 0.09636586904525757,
+      "brier": 0.029908278957009315
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1917,
+      "accuracy": 0.616599977016449,
+      "loss": 4.712207317352295,
+      "brier": 0.6600922346115112
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3873,
+      "accuracy": 0.6126999855041504,
+      "loss": 4.703110218048096,
+      "brier": 0.6655658483505249
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 256,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "b9f55e2a5a31e2a361",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 665710,
+      "active_tree_parameters": 665710,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 954008,
+      "active_total_parameters": 954008
+    },
+    "seconds_this_invocation": 422.64000000001397,
+    "model_path": "models/5e1782c37c2404e924/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/5e1782c37c2404e924/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04696832597255707,
+      "brier": 0.018737860023975372
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8795692920684814,
+      "brier": 0.29739058017730713
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04696832597255707,
+      "brier": 0.018737860023975372
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1716,
+      "accuracy": 0.6567999720573425,
+      "loss": 3.731111764907837,
+      "brier": 0.5677018761634827
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3485,
+      "accuracy": 0.6514999866485596,
+      "loss": 3.8700382709503174,
+      "brier": 0.5839981436729431
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 256,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 409
+    },
+    "job_id": "7c769e97b0236126bd",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 665710,
+      "active_tree_parameters": 665710,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 954008,
+      "active_total_parameters": 954008
+    },
+    "seconds_this_invocation": 1057.296999999904,
+    "model_path": "models/efa66ae748f4f08d85/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/efa66ae748f4f08d85/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.0394781231880188,
+      "brier": 0.014648618176579475
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.0115582942962646,
+      "brier": 0.29119256138801575
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.032219912856817245,
+      "brier": 0.011204763315618038
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1833,
+      "accuracy": 0.633400022983551,
+      "loss": 4.230823993682861,
+      "brier": 0.6118646860122681
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3594,
+      "accuracy": 0.6406000256538391,
+      "loss": 4.218120574951172,
+      "brier": 0.6027703881263733
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 32,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "a59cfc49f957955d0b",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 83310,
+      "active_tree_parameters": 83310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 371608,
+      "active_total_parameters": 371608
+    },
+    "seconds_this_invocation": 510.0,
+    "model_path": "models/fb9796e14176047ab7/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/fb9796e14176047ab7/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.043101005256175995,
+      "brier": 0.017146753147244453
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.0156517028808594,
+      "brier": 0.2961274981498718
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.043101005256175995,
+      "brier": 0.017146753147244453
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1917,
+      "accuracy": 0.616599977016449,
+      "loss": 4.985011100769043,
+      "brier": 0.6588868498802185
+    },
+    "convergence_flags": [
+      {
+        "node": "3:root.A",
+        "best_errors": 2,
+        "best_loss": 0.00796291884034872,
+        "epoch": 1000,
+        "last_errors": 2,
+        "last_loss": 0.007965225726366043,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3950,
+      "accuracy": 0.6050000190734863,
+      "loss": 5.457977294921875,
+      "brier": 0.6866412162780762
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 32,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "768e643fb225787981",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 83310,
+      "active_tree_parameters": 83310,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 371608,
+      "active_total_parameters": 371608
+    },
+    "seconds_this_invocation": 523.530999999959,
+    "model_path": "models/69940e9d610f46db33/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/69940e9d610f46db33/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 51,
+      "accuracy": 0.9872499704360962,
+      "loss": 0.09495463967323303,
+      "brier": 0.031961459666490555
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 570,
+      "accuracy": 0.8575000166893005,
+      "loss": 2.4719974994659424,
+      "brier": 0.28428611159324646
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 51,
+      "accuracy": 0.9872499704360962,
+      "loss": 0.09495463967323303,
+      "brier": 0.031961459666490555
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1854,
+      "accuracy": 0.6291999816894531,
+      "loss": 3.9856059551239014,
+      "brier": 0.6340703368186951
+    },
+    "convergence_flags": [
+      {
+        "node": "3:root.A",
+        "best_errors": 2,
+        "best_loss": 0.008208475075662136,
+        "epoch": 1000,
+        "last_errors": 2,
+        "last_loss": 0.008640250191092491,
+        "loss_still_falling": true
+      },
+      {
+        "node": "4:root.A",
+        "best_errors": 1,
+        "best_loss": 0.006738912779837847,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.0069479248486459255,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3820,
+      "accuracy": 0.6179999709129333,
+      "loss": 4.409417152404785,
+      "brier": 0.6589067578315735
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "b6db07e931f7bd46e3",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 509.344000000041,
+    "model_path": "models/8a765ecd97fce3f40d/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/8a765ecd97fce3f40d/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04454141855239868,
+      "brier": 0.01767520233988762
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8770718574523926,
+      "brier": 0.2963263988494873
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04454141855239868,
+      "brier": 0.01767520233988762
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1803,
+      "accuracy": 0.6394000053405762,
+      "loss": 4.313129901885986,
+      "brier": 0.6117573380470276
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3707,
+      "accuracy": 0.6292999982833862,
+      "loss": 4.616716384887695,
+      "brier": 0.636971116065979
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "1147591e9ecfdf86fb",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 511.375,
+    "model_path": "models/060da263619986b415/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/060da263619986b415/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04364868253469467,
+      "brier": 0.017255203798413277
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.880967855453491,
+      "brier": 0.29599133133888245
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04364868253469467,
+      "brier": 0.017255203798413277
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1810,
+      "accuracy": 0.6380000114440918,
+      "loss": 4.456091403961182,
+      "brier": 0.6192758083343506
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3783,
+      "accuracy": 0.6216999888420105,
+      "loss": 4.674140453338623,
+      "brier": 0.6484966278076172
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "f7b823938ef2923680",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 549.1720000000205,
+    "model_path": "models/617d947b75c48082ab/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/617d947b75c48082ab/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04960907995700836,
+      "brier": 0.019893787801265717
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8805530071258545,
+      "brier": 0.2984960973262787
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04960907995700836,
+      "brier": 0.019893787801265717
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1606,
+      "accuracy": 0.6787999868392944,
+      "loss": 3.001039981842041,
+      "brier": 0.5186850428581238
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3228,
+      "accuracy": 0.6772000193595886,
+      "loss": 3.169771909713745,
+      "brier": 0.5276418328285217
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "none",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "cc02d57148920d66dd",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 1,
+    "finite_training_views": 4000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 533.1720000000205,
+    "model_path": "models/41d258e53dea0b3bbd/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/41d258e53dea0b3bbd/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04915351793169975,
+      "brier": 0.019629769027233124
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.8795197010040283,
+      "brier": 0.29823219776153564
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04915351793169975,
+      "brier": 0.019629769027233124
+    },
+    "node_optimizer_updates": 50000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1611,
+      "accuracy": 0.6777999997138977,
+      "loss": 3.024141311645508,
+      "brier": 0.5195971727371216
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3223,
+      "accuracy": 0.6776999831199646,
+      "loss": 3.146063804626465,
+      "brier": 0.5266425609588623
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "ee5db225151741242d",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 1195.8120000000345,
+    "model_path": "models/4bbd960f1b56d4e8f9/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/4bbd960f1b56d4e8f9/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 121,
+      "accuracy": 0.9899166822433472,
+      "loss": 0.09433229267597198,
+      "brier": 0.030734458938241005
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 551,
+      "accuracy": 0.8622499704360962,
+      "loss": 2.5701065063476562,
+      "brier": 0.2786320149898529
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 41,
+      "accuracy": 0.9897500276565552,
+      "loss": 0.09325648844242096,
+      "brier": 0.028870223090052605
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1932,
+      "accuracy": 0.6136000156402588,
+      "loss": 4.632534503936768,
+      "brier": 0.6579850912094116
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3822,
+      "accuracy": 0.6177999973297119,
+      "loss": 4.553539276123047,
+      "brier": 0.6583736538887024
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 64,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "e55d408bcc8611eb3d",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 166510,
+      "active_tree_parameters": 166510,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 454808,
+      "active_total_parameters": 454808
+    },
+    "seconds_this_invocation": 997.015999999945,
+    "model_path": "models/4edd2f947400bd89e8/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/4edd2f947400bd89e8/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 112,
+      "accuracy": 0.9906666874885559,
+      "loss": 0.09107344597578049,
+      "brier": 0.029671313241124153
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 552,
+      "accuracy": 0.8619999885559082,
+      "loss": 2.5627965927124023,
+      "brier": 0.2787896394729614
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 40,
+      "accuracy": 0.9900000095367432,
+      "loss": 0.09089437127113342,
+      "brier": 0.028132595121860504
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1930,
+      "accuracy": 0.6140000224113464,
+      "loss": 4.581099033355713,
+      "brier": 0.6559618711471558
+    },
+    "convergence_flags": [
+      {
+        "node": "6:root.A",
+        "best_errors": 34,
+        "best_loss": 0.017173970118165016,
+        "epoch": 1000,
+        "last_errors": 38,
+        "last_loss": 0.01732706092298031,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3864,
+      "accuracy": 0.6136000156402588,
+      "loss": 4.652307987213135,
+      "brier": 0.6623783111572266
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 128,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "42d62305a85591f7bd",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 332910,
+      "active_tree_parameters": 332910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 621208,
+      "active_total_parameters": 621208
+    },
+    "seconds_this_invocation": 962.5469999999041,
+    "model_path": "models/fa492f16bc1c1526a0/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/fa492f16bc1c1526a0/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03921998664736748,
+      "brier": 0.014659116975963116
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.01501727104187,
+      "brier": 0.29096585512161255
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03192756325006485,
+      "brier": 0.011242857202887535
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1929,
+      "accuracy": 0.6141999959945679,
+      "loss": 4.700790882110596,
+      "brier": 0.6458348631858826
+    },
+    "convergence_flags": [
+      {
+        "node": "6:root.A",
+        "best_errors": 0,
+        "best_loss": 0.003427407005801797,
+        "epoch": 1000,
+        "last_errors": 1,
+        "last_loss": 0.003954241517931223,
+        "loss_still_falling": true
+      }
+    ],
+    "test": {
+      "examples": 10000,
+      "errors": 3765,
+      "accuracy": 0.6234999895095825,
+      "loss": 4.62841796875,
+      "brier": 0.6378106474876404
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 128,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "037e4570612a587b00",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 332910,
+      "active_tree_parameters": 332910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 621208,
+      "active_total_parameters": 621208
+    },
+    "seconds_this_invocation": 970.969000000041,
+    "model_path": "models/ab7532eeea681d09da/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/ab7532eeea681d09da/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03924112394452095,
+      "brier": 0.014735855162143707
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 3.010312080383301,
+      "brier": 0.29143503308296204
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03214895352721214,
+      "brier": 0.011512323282659054
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1872,
+      "accuracy": 0.6255999803543091,
+      "loss": 4.497066974639893,
+      "brier": 0.6298609375953674
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3749,
+      "accuracy": 0.6251000165939331,
+      "loss": 4.583409309387207,
+      "brier": 0.6323961019515991
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 410
+    },
+    "job_id": "a1d0a2c0bbccbd637f",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 901.9529999999795,
+    "model_path": "models/c25b1043bdfc7f11fd/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/c25b1043bdfc7f11fd/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04023321717977524,
+      "brier": 0.01500528585165739
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.9984054565429688,
+      "brier": 0.2908492386341095
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.032200247049331665,
+      "brier": 0.011329008266329765
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1724,
+      "accuracy": 0.6552000045776367,
+      "loss": 3.640512466430664,
+      "brier": 0.5599995851516724
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3434,
+      "accuracy": 0.6565999984741211,
+      "loss": 3.7244834899902344,
+      "brier": 0.5656943321228027
+    }
+  },
+  {
+    "dataset": "cifar10",
+    "job": {
+      "dataset": "cifar10",
+      "augmentation": "augmented",
+      "noise": 0.15,
+      "width": 2048,
+      "depth": 1,
+      "epochs": 1000,
+      "sampler": "full",
+      "sample_fraction": 1.0,
+      "replicate": 0,
+      "seed": 411
+    },
+    "job_id": "b264f393642d86a4ea",
+    "classes": 10,
+    "debug_subset": false,
+    "sample_draws": 4000,
+    "unique_originals": 4000,
+    "augmentation_views_per_original": 3,
+    "finite_training_views": 12000,
+    "feature_signature": "db11841140083edfd1787def7469784832de5b2246b9d3c754219d37f1b39aef",
+    "size": {
+      "tree_parameters": 5324910,
+      "active_tree_parameters": 5324910,
+      "nodes": 30,
+      "active_nodes": 30,
+      "correction_nodes": 20,
+      "maximum_depth": 1,
+      "shared_cnn_and_head_parameters": 288298,
+      "total_parameters": 5613208,
+      "active_total_parameters": 5613208
+    },
+    "seconds_this_invocation": 1214.7029999999795,
+    "model_path": "models/f68203a2a360e24e0c/epochs-1000/depth-1/model.pt",
+    "predictions_path": "models/f68203a2a360e24e0c/epochs-1000/depth-1/predictions.pt",
+    "test_status": "exploratory_reused_test_after_fixed_or_training_selected_queue",
+    "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+    "train_views": {
+      "examples": 12000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.04056209325790405,
+      "brier": 0.015207227319478989
+    },
+    "train_selected_unique": {
+      "examples": 4000,
+      "errors": 566,
+      "accuracy": 0.8585000038146973,
+      "loss": 2.995718240737915,
+      "brier": 0.29131385684013367
+    },
+    "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+    "changed_training_draws": 566,
+    "actual_noise_fraction_in_draws": 0.1415,
+    "train_canonical_study_labels": {
+      "examples": 4000,
+      "errors": 0,
+      "accuracy": 1.0,
+      "loss": 0.03307348117232323,
+      "brier": 0.011792533099651337
+    },
+    "node_optimizer_updates": 135000,
+    "validation": {
+      "examples": 5000,
+      "errors": 1725,
+      "accuracy": 0.6549999713897705,
+      "loss": 3.5518605709075928,
+      "brier": 0.5579861998558044
+    },
+    "convergence_flags": [],
+    "test": {
+      "examples": 10000,
+      "errors": 3413,
+      "accuracy": 0.6586999893188477,
+      "loss": 3.735450029373169,
+      "brier": 0.5629271268844604
+    }
+  }
+]

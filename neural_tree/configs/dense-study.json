@@ -1,0 +1,13 @@
+{
+  "datasets": ["cats_vs_dogs", "cifar10"],
+  "widths": [1, 2, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384, 512],
+  "primary_seed": 409,
+  "repeat_seeds": [410, 411],
+  "repeat_widths": {"cifar10": [16, 24, 32, 48], "cats_vs_dogs": [8, 12, 16, 24]},
+  "node_epochs": 300,
+  "correction_epochs": 150,
+  "max_depth": 2,
+  "max_nodes": 7,
+  "source_prefix": "sweep-long",
+  "policy": "Exploratory validation-only extension. Fixed frozen CNN, splits, optimizer and epoch budget. Reuse only exact matching runs; retain every result. No new test evaluation or change to selected models."
+}

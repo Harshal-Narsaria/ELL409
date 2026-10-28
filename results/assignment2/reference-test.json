@@ -1,0 +1,774 @@
+{
+  "complete": true,
+  "fixed_models": 6,
+  "records": [
+    {
+      "dataset": "cats_vs_dogs",
+      "job": {
+        "dataset": "cats_vs_dogs",
+        "augmentation": "none",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "1d10a3a53763c79b51",
+      "classes": 2,
+      "debug_subset": false,
+      "sample_draws": 18608,
+      "unique_originals": 18608,
+      "augmentation_views_per_original": 1,
+      "finite_training_views": 18608,
+      "feature_signature": "3d35f2a407153755f11b1f4e07cd6033a1f58391a2f6a94fec5aba8a89849bbe",
+      "size": {
+        "tree_parameters": 16651,
+        "active_tree_parameters": 16651,
+        "nodes": 3,
+        "active_nodes": 3,
+        "correction_nodes": 2,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 287266,
+        "total_parameters": 303917,
+        "active_total_parameters": 303917
+      },
+      "seconds_this_invocation": 81.96900000004098,
+      "model_path": "models/0030a06a79bde25d1e/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/0030a06a79bde25d1e/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 18608,
+        "errors": 2931,
+        "accuracy": 0.842487096786499,
+        "loss": 0.3622274696826935,
+        "brier": 0.22780010104179382
+      },
+      "train_selected_unique": {
+        "examples": 18608,
+        "errors": 2931,
+        "accuracy": 0.842487096786499,
+        "loss": 0.3622274696826935,
+        "brier": 0.22780010104179382
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 18608,
+        "errors": 2931,
+        "accuracy": 0.842487096786499,
+        "loss": 0.3622274696826935,
+        "brier": 0.22780010104179382
+      },
+      "node_optimizer_updates": 8800,
+      "validation": {
+        "examples": 2326,
+        "errors": 431,
+        "accuracy": 0.8147033452987671,
+        "loss": 0.40474846959114075,
+        "brier": 0.2570438086986542
+      },
+      "convergence_flags": [
+        {
+          "node": "1:root.A",
+          "best_errors": 2034,
+          "best_loss": 0.3716351091861725,
+          "epoch": 400,
+          "last_errors": 2266,
+          "last_loss": 0.405648410320282,
+          "loss_still_falling": true
+        },
+        {
+          "node": "1:root.B",
+          "best_errors": 2032,
+          "best_loss": 0.37466415762901306,
+          "epoch": 400,
+          "last_errors": 2032,
+          "last_loss": 0.37466415762901306,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 2326,
+        "errors": 438,
+        "accuracy": 0.8116939067840576,
+        "loss": 0.39687228202819824,
+        "brier": 0.25368571281433105
+      }
+    },
+    {
+      "dataset": "cats_vs_dogs",
+      "job": {
+        "dataset": "cats_vs_dogs",
+        "augmentation": "repeat",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "7fdf2c96ea9896d5a6",
+      "classes": 2,
+      "debug_subset": false,
+      "sample_draws": 18608,
+      "unique_originals": 18608,
+      "augmentation_views_per_original": 3,
+      "finite_training_views": 55824,
+      "feature_signature": "3d35f2a407153755f11b1f4e07cd6033a1f58391a2f6a94fec5aba8a89849bbe",
+      "size": {
+        "tree_parameters": 16651,
+        "active_tree_parameters": 16651,
+        "nodes": 3,
+        "active_nodes": 3,
+        "correction_nodes": 2,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 287266,
+        "total_parameters": 303917,
+        "active_total_parameters": 303917
+      },
+      "seconds_this_invocation": 201.96899999998277,
+      "model_path": "models/a908a1544fba3c723f/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/a908a1544fba3c723f/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 55824,
+        "errors": 7539,
+        "accuracy": 0.8649505376815796,
+        "loss": 0.3422451913356781,
+        "brier": 0.2112583965063095
+      },
+      "train_selected_unique": {
+        "examples": 18608,
+        "errors": 2513,
+        "accuracy": 0.8649505376815796,
+        "loss": 0.3422451913356781,
+        "brier": 0.2112584114074707
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 18608,
+        "errors": 2513,
+        "accuracy": 0.8649505376815796,
+        "loss": 0.3422451913356781,
+        "brier": 0.2112584114074707
+      },
+      "node_optimizer_updates": 25600,
+      "validation": {
+        "examples": 2326,
+        "errors": 444,
+        "accuracy": 0.8091143369674683,
+        "loss": 0.40765276551246643,
+        "brier": 0.25983795523643494
+      },
+      "convergence_flags": [
+        {
+          "node": "1:root.B",
+          "best_errors": 3936,
+          "best_loss": 0.27078837156295776,
+          "epoch": 400,
+          "last_errors": 4026,
+          "last_loss": 0.27466025948524475,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 2326,
+        "errors": 445,
+        "accuracy": 0.8086844086647034,
+        "loss": 0.40055960416793823,
+        "brier": 0.25695717334747314
+      }
+    },
+    {
+      "dataset": "cats_vs_dogs",
+      "job": {
+        "dataset": "cats_vs_dogs",
+        "augmentation": "augmented",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "e52bb7f6f29170854b",
+      "classes": 2,
+      "debug_subset": false,
+      "sample_draws": 18608,
+      "unique_originals": 18608,
+      "augmentation_views_per_original": 3,
+      "finite_training_views": 55824,
+      "feature_signature": "3d35f2a407153755f11b1f4e07cd6033a1f58391a2f6a94fec5aba8a89849bbe",
+      "size": {
+        "tree_parameters": 16651,
+        "active_tree_parameters": 16651,
+        "nodes": 3,
+        "active_nodes": 3,
+        "correction_nodes": 2,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 287266,
+        "total_parameters": 303917,
+        "active_total_parameters": 303917
+      },
+      "seconds_this_invocation": 206.85999999998603,
+      "model_path": "models/f896c79803804af8a6/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/f896c79803804af8a6/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 55824,
+        "errors": 10055,
+        "accuracy": 0.8198803663253784,
+        "loss": 0.39822304248809814,
+        "brier": 0.25374019145965576
+      },
+      "train_selected_unique": {
+        "examples": 18608,
+        "errors": 3026,
+        "accuracy": 0.8373817801475525,
+        "loss": 0.36502349376678467,
+        "brier": 0.23005418479442596
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 18608,
+        "errors": 3026,
+        "accuracy": 0.8373817801475525,
+        "loss": 0.36502349376678467,
+        "brier": 0.23005418479442596
+      },
+      "node_optimizer_updates": 26400,
+      "validation": {
+        "examples": 2326,
+        "errors": 435,
+        "accuracy": 0.8129836916923523,
+        "loss": 0.406121164560318,
+        "brier": 0.2584991157054901
+      },
+      "convergence_flags": [
+        {
+          "node": "1:root.A",
+          "best_errors": 6811,
+          "best_loss": 0.3980470895767212,
+          "epoch": 400,
+          "last_errors": 8676,
+          "last_loss": 0.48268425464630127,
+          "loss_still_falling": true
+        },
+        {
+          "node": "1:root.B",
+          "best_errors": 6916,
+          "best_loss": 0.40152376890182495,
+          "epoch": 400,
+          "last_errors": 7222,
+          "last_loss": 0.4186215400695801,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 2326,
+        "errors": 427,
+        "accuracy": 0.8164230585098267,
+        "loss": 0.39390820264816284,
+        "brier": 0.25150150060653687
+      }
+    },
+    {
+      "dataset": "cifar10",
+      "job": {
+        "dataset": "cifar10",
+        "augmentation": "none",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "c6098c646b2934667d",
+      "classes": 10,
+      "debug_subset": false,
+      "sample_draws": 45000,
+      "unique_originals": 45000,
+      "augmentation_views_per_original": 1,
+      "finite_training_views": 45000,
+      "feature_signature": "87625c471c6d03baea02b8656d944fd6ba5d5b00e94a3d9a89051506a6a8db56",
+      "size": {
+        "tree_parameters": 166510,
+        "active_tree_parameters": 166510,
+        "nodes": 30,
+        "active_nodes": 30,
+        "correction_nodes": 20,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 288298,
+        "total_parameters": 454808,
+        "active_total_parameters": 454808
+      },
+      "seconds_this_invocation": 1475.1720000000205,
+      "model_path": "models/9698d11960b83325b0/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/9698d11960b83325b0/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 45000,
+        "errors": 2495,
+        "accuracy": 0.9445555806159973,
+        "loss": 0.17862752079963684,
+        "brier": 0.08896594494581223
+      },
+      "train_selected_unique": {
+        "examples": 45000,
+        "errors": 2495,
+        "accuracy": 0.9445555806159973,
+        "loss": 0.17862752079963684,
+        "brier": 0.08896594494581223
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 45000,
+        "errors": 2495,
+        "accuracy": 0.9445555806159973,
+        "loss": 0.17862752079963684,
+        "brier": 0.08896594494581223
+      },
+      "node_optimizer_updates": 187200,
+      "validation": {
+        "examples": 5000,
+        "errors": 1175,
+        "accuracy": 0.7649999856948853,
+        "loss": 0.9320275187492371,
+        "brier": 0.3663861155509949
+      },
+      "convergence_flags": [
+        {
+          "node": "1:root.A",
+          "best_errors": 0,
+          "best_loss": 0.0006511577521450818,
+          "epoch": 400,
+          "last_errors": 1,
+          "last_loss": 0.0008491813205182552,
+          "loss_still_falling": true
+        },
+        {
+          "node": "1:root.B",
+          "best_errors": 8,
+          "best_loss": 0.015541299246251583,
+          "epoch": 400,
+          "last_errors": 8,
+          "last_loss": 0.015541299246251583,
+          "loss_still_falling": true
+        },
+        {
+          "node": "2:root.B",
+          "best_errors": 521,
+          "best_loss": 0.20414531230926514,
+          "epoch": 400,
+          "last_errors": 561,
+          "last_loss": 0.2090766280889511,
+          "loss_still_falling": true
+        },
+        {
+          "node": "3:root.B",
+          "best_errors": 250,
+          "best_loss": 0.153549462556839,
+          "epoch": 400,
+          "last_errors": 260,
+          "last_loss": 0.1548977792263031,
+          "loss_still_falling": true
+        },
+        {
+          "node": "4:root.B",
+          "best_errors": 139,
+          "best_loss": 0.09681630879640579,
+          "epoch": 400,
+          "last_errors": 139,
+          "last_loss": 0.09681630879640579,
+          "loss_still_falling": true
+        },
+        {
+          "node": "7:root.A",
+          "best_errors": 32,
+          "best_loss": 0.004453705158084631,
+          "epoch": 400,
+          "last_errors": 69,
+          "last_loss": 0.006955710239708424,
+          "loss_still_falling": true
+        },
+        {
+          "node": "8:root.B",
+          "best_errors": 81,
+          "best_loss": 0.0531754195690155,
+          "epoch": 400,
+          "last_errors": 98,
+          "last_loss": 0.05910039693117142,
+          "loss_still_falling": true
+        },
+        {
+          "node": "9:root.A",
+          "best_errors": 1,
+          "best_loss": 0.0005924345459789038,
+          "epoch": 400,
+          "last_errors": 1,
+          "last_loss": 0.0009081450989469886,
+          "loss_still_falling": true
+        },
+        {
+          "node": "9:root.B",
+          "best_errors": 97,
+          "best_loss": 0.05764228478074074,
+          "epoch": 400,
+          "last_errors": 105,
+          "last_loss": 0.06104305386543274,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 10000,
+        "errors": 2387,
+        "accuracy": 0.7613000273704529,
+        "loss": 0.9493780136108398,
+        "brier": 0.3762187957763672
+      }
+    },
+    {
+      "dataset": "cifar10",
+      "job": {
+        "dataset": "cifar10",
+        "augmentation": "repeat",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "ec225ce9a6162eae8c",
+      "classes": 10,
+      "debug_subset": false,
+      "sample_draws": 45000,
+      "unique_originals": 45000,
+      "augmentation_views_per_original": 3,
+      "finite_training_views": 135000,
+      "feature_signature": "87625c471c6d03baea02b8656d944fd6ba5d5b00e94a3d9a89051506a6a8db56",
+      "size": {
+        "tree_parameters": 166510,
+        "active_tree_parameters": 166510,
+        "nodes": 30,
+        "active_nodes": 30,
+        "correction_nodes": 20,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 288298,
+        "total_parameters": 454808,
+        "active_total_parameters": 454808
+      },
+      "seconds_this_invocation": 3011.0939999999828,
+      "model_path": "models/f2fc005ecc8bf7f59a/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/f2fc005ecc8bf7f59a/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 135000,
+        "errors": 993,
+        "accuracy": 0.9926444292068481,
+        "loss": 0.05806370824575424,
+        "brier": 0.022730378434062004
+      },
+      "train_selected_unique": {
+        "examples": 45000,
+        "errors": 331,
+        "accuracy": 0.9926444292068481,
+        "loss": 0.05806370824575424,
+        "brier": 0.022730378434062004
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 45000,
+        "errors": 331,
+        "accuracy": 0.9926444292068481,
+        "loss": 0.05806370824575424,
+        "brier": 0.022730378434062004
+      },
+      "node_optimizer_updates": 551600,
+      "validation": {
+        "examples": 5000,
+        "errors": 1261,
+        "accuracy": 0.7477999925613403,
+        "loss": 1.2738118171691895,
+        "brier": 0.4101802110671997
+      },
+      "convergence_flags": [
+        {
+          "node": "0:root.B",
+          "best_errors": 6,
+          "best_loss": 0.013416360132396221,
+          "epoch": 400,
+          "last_errors": 15,
+          "last_loss": 0.013456135988235474,
+          "loss_still_falling": true
+        },
+        {
+          "node": "2:root.B",
+          "best_errors": 108,
+          "best_loss": 0.050433915108442307,
+          "epoch": 400,
+          "last_errors": 108,
+          "last_loss": 0.050433915108442307,
+          "loss_still_falling": true
+        },
+        {
+          "node": "3:root.A",
+          "best_errors": 78,
+          "best_loss": 0.00564592657610774,
+          "epoch": 400,
+          "last_errors": 129,
+          "last_loss": 0.0072069368325173855,
+          "loss_still_falling": true
+        },
+        {
+          "node": "3:root.B",
+          "best_errors": 6,
+          "best_loss": 0.02048378624022007,
+          "epoch": 400,
+          "last_errors": 6,
+          "last_loss": 0.021627219393849373,
+          "loss_still_falling": true
+        },
+        {
+          "node": "4:root.A",
+          "best_errors": 12,
+          "best_loss": 0.0014772276626899838,
+          "epoch": 400,
+          "last_errors": 30,
+          "last_loss": 0.0023324836511164904,
+          "loss_still_falling": true
+        },
+        {
+          "node": "4:root.B",
+          "best_errors": 0,
+          "best_loss": 0.005608814302831888,
+          "epoch": 400,
+          "last_errors": 3,
+          "last_loss": 0.00600854679942131,
+          "loss_still_falling": true
+        },
+        {
+          "node": "5:root.B",
+          "best_errors": 15,
+          "best_loss": 0.019364850595593452,
+          "epoch": 400,
+          "last_errors": 18,
+          "last_loss": 0.02065403200685978,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 10000,
+        "errors": 2556,
+        "accuracy": 0.7444000244140625,
+        "loss": 1.303398847579956,
+        "brier": 0.41759029030799866
+      }
+    },
+    {
+      "dataset": "cifar10",
+      "job": {
+        "dataset": "cifar10",
+        "augmentation": "augmented",
+        "noise": 0.0,
+        "width": 64,
+        "depth": 1,
+        "epochs": 400,
+        "sampler": "full",
+        "sample_fraction": 1.0,
+        "replicate": 0,
+        "seed": 409
+      },
+      "job_id": "b0a1599be4087449fd",
+      "classes": 10,
+      "debug_subset": false,
+      "sample_draws": 45000,
+      "unique_originals": 45000,
+      "augmentation_views_per_original": 3,
+      "finite_training_views": 135000,
+      "feature_signature": "87625c471c6d03baea02b8656d944fd6ba5d5b00e94a3d9a89051506a6a8db56",
+      "size": {
+        "tree_parameters": 166510,
+        "active_tree_parameters": 166510,
+        "nodes": 30,
+        "active_nodes": 30,
+        "correction_nodes": 20,
+        "maximum_depth": 1,
+        "shared_cnn_and_head_parameters": 288298,
+        "total_parameters": 454808,
+        "active_total_parameters": 454808
+      },
+      "seconds_this_invocation": 4615.0470000000205,
+      "model_path": "models/1d9c8096b596127b26/epochs-400/depth-1/model.pt",
+      "predictions_path": "models/1d9c8096b596127b26/epochs-400/depth-1/predictions.pt",
+      "test_status": "evaluated_after_all_fixed_reference_models_complete; reused_test_exploratory",
+      "bias_variance_scope": "Conditional on the original shared CNN trained on the full clean training pool. Original sample counts refer to correction-tree training draws; augmented views are not independent originals. Empirical squared-bias proxy uses observed held-out one-hot labels; irreducible noise is not identified.",
+      "train_views": {
+        "examples": 135000,
+        "errors": 15755,
+        "accuracy": 0.8832963109016418,
+        "loss": 0.3359981179237366,
+        "brier": 0.17095442116260529
+      },
+      "train_selected_unique": {
+        "examples": 45000,
+        "errors": 4200,
+        "accuracy": 0.9066666960716248,
+        "loss": 0.26804640889167786,
+        "brier": 0.13712529838085175
+      },
+      "train_selected_unique_label_reference": "Original clean labels; noisy fitting is reported separately.",
+      "changed_training_draws": 0,
+      "actual_noise_fraction_in_draws": 0.0,
+      "train_canonical_study_labels": {
+        "examples": 45000,
+        "errors": 4200,
+        "accuracy": 0.9066666960716248,
+        "loss": 0.26804640889167786,
+        "brier": 0.13712529838085175
+      },
+      "node_optimizer_updates": 557200,
+      "validation": {
+        "examples": 5000,
+        "errors": 1129,
+        "accuracy": 0.7742000222206116,
+        "loss": 0.8007276654243469,
+        "brier": 0.3364240825176239
+      },
+      "convergence_flags": [
+        {
+          "node": "0:root.A",
+          "best_errors": 1556,
+          "best_loss": 0.03830743208527565,
+          "epoch": 400,
+          "last_errors": 1659,
+          "last_loss": 0.04020616039633751,
+          "loss_still_falling": true
+        },
+        {
+          "node": "0:root.B",
+          "best_errors": 1017,
+          "best_loss": 0.16557779908180237,
+          "epoch": 400,
+          "last_errors": 1041,
+          "last_loss": 0.16656967997550964,
+          "loss_still_falling": true
+        },
+        {
+          "node": "1:root.B",
+          "best_errors": 29,
+          "best_loss": 0.011155447922647,
+          "epoch": 400,
+          "last_errors": 29,
+          "last_loss": 0.011155447922647,
+          "loss_still_falling": true
+        },
+        {
+          "node": "2:root.A",
+          "best_errors": 3648,
+          "best_loss": 0.08254572749137878,
+          "epoch": 400,
+          "last_errors": 4831,
+          "last_loss": 0.10650844126939774,
+          "loss_still_falling": true
+        },
+        {
+          "node": "3:root.B",
+          "best_errors": 1495,
+          "best_loss": 0.21060732007026672,
+          "epoch": 400,
+          "last_errors": 1633,
+          "last_loss": 0.22164073586463928,
+          "loss_still_falling": true
+        },
+        {
+          "node": "5:root.B",
+          "best_errors": 1319,
+          "best_loss": 0.20241346955299377,
+          "epoch": 400,
+          "last_errors": 1390,
+          "last_loss": 0.21201609075069427,
+          "loss_still_falling": true
+        },
+        {
+          "node": "6:root.A",
+          "best_errors": 2671,
+          "best_loss": 0.06257054209709167,
+          "epoch": 400,
+          "last_errors": 3482,
+          "last_loss": 0.08242463320493698,
+          "loss_still_falling": true
+        },
+        {
+          "node": "6:root.B",
+          "best_errors": 763,
+          "best_loss": 0.13372397422790527,
+          "epoch": 400,
+          "last_errors": 816,
+          "last_loss": 0.140857994556427,
+          "loss_still_falling": true
+        },
+        {
+          "node": "8:root.A",
+          "best_errors": 150,
+          "best_loss": 0.0046973517164587975,
+          "epoch": 400,
+          "last_errors": 241,
+          "last_loss": 0.006528350990265608,
+          "loss_still_falling": true
+        },
+        {
+          "node": "9:root.A",
+          "best_errors": 922,
+          "best_loss": 0.02459057606756687,
+          "epoch": 400,
+          "last_errors": 1053,
+          "last_loss": 0.02595493011176586,
+          "loss_still_falling": true
+        },
+        {
+          "node": "9:root.B",
+          "best_errors": 228,
+          "best_loss": 0.05279077962040901,
+          "epoch": 400,
+          "last_errors": 316,
+          "last_loss": 0.06307447701692581,
+          "loss_still_falling": true
+        }
+      ],
+      "test": {
+        "examples": 10000,
+        "errors": 2331,
+        "accuracy": 0.7669000029563904,
+        "loss": 0.849809467792511,
+        "brier": 0.35081496834754944
+      }
+    }
+  ]
+}

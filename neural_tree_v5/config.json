@@ -1,0 +1,19 @@
+{
+  "datasets": ["cats_vs_dogs", "cifar10"],
+  "feature_source": "neural_tree_v3/runs/cnn80-depth",
+  "feature_dimension": 128,
+  "noise_rates": [0.15, 0.0],
+  "noise_seed": 150409,
+  "seed": 409,
+  "repeat_seeds": [410, 411],
+  "widths": [2, 4, 8, 16, 32, 64, 128, 256, 512, 1024],
+  "depth": 1,
+  "root_epochs": 400,
+  "mlp_epochs": 400,
+  "mlp_batch": 1024,
+  "eval_batch": 2048,
+  "lr": 0.001,
+  "correction_epochs": 150,
+  "regularization": {"weight_decay": 0, "dropout": 0, "label_smoothing": 0, "augmentation": false},
+  "protocol": "Controlled downstream training-label-noise study. CNN80 features were learned earlier from original training labels and are now frozen; this is not a noisy end-to-end CNN experiment. Discard cached CNN class scores; all roots and children are new MLPs. Shared fixed depth-one topology with three allocated node networks per binary tree; all learned node widths vary together. Report allocated, trained and active capacity separately. One persistent corruption map per dataset, shared across widths and optimizer seeds. Exact duplicate feature groups receive the same wrong class to avoid contradictory synthetic targets. Validation and test retain original labels. Compare root-only ablations and completed correction trees. Select repeats only from noisy/original training-error interpolation, never held-out scores. Evaluate test only after all predeclared primary and repeat jobs for that dataset are finished; the reused test splits are exploratory. Retain original-label training metrics in addition to noisy-label fitting metrics. No promised double descent or interpolation; inspect convergence before claiming a capacity effect. Original versions and final submission remain untouched."
+}

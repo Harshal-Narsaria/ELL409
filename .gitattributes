@@ -1,0 +1,5 @@
+# Keep binary files (models, PDFs, images) byte-for-byte.
+*.pt binary
+*.pdf binary
+*.png binary
+*.npz binary

@@ -1,0 +1,135 @@
+{
+  "protocol": {
+    "split": "validation only; no model training or test evaluation",
+    "views": 8,
+    "view_seed": 730409,
+    "padding": 4,
+    "transforms": "canonical plus seven deterministic reflect-crop-horizontal-flip views",
+    "models": "all predeclared original/augmented single references and three-member deployments, both datasets",
+    "voting": "one final class vote per member per view; ties smallest class index",
+    "scope": "exploratory validation diagnostics; not a new unbiased test result"
+  },
+  "datasets": {
+    "cifar10": {
+      "examples": 5000,
+      "root_canonical_accuracy": 0.7576000094413757,
+      "root_view_vote_accuracy": 0.7459999918937683,
+      "mean_augmented_feature_distance": 4.652069704873221,
+      "models": [
+        {
+          "model": "none-single",
+          "members": 1,
+          "canonical_accuracy": 0.7649999856948853,
+          "view_vote_accuracy": 0.7821999788284302,
+          "gain_percentage_points": 1.7199993133544922,
+          "root_errors_corrected": 356,
+          "root_correct_predictions_spoiled": 319,
+          "net_correction_gain_count": 37,
+          "prediction_changes_from_root": 958,
+          "view_disagreement_including_canonical": 0.2097499966621399,
+          "view_vote_ties": 246
+        },
+        {
+          "model": "none-vote-3",
+          "members": 3,
+          "canonical_accuracy": 0.7680000066757202,
+          "view_vote_accuracy": 0.7850000262260437,
+          "gain_percentage_points": 1.7000019550323486,
+          "root_errors_corrected": 356,
+          "root_correct_predictions_spoiled": 304,
+          "net_correction_gain_count": 52,
+          "prediction_changes_from_root": 918,
+          "view_disagreement_including_canonical": 0.2180916666984558,
+          "view_vote_ties": 96
+        },
+        {
+          "model": "augmented-single",
+          "members": 1,
+          "canonical_accuracy": 0.7742000222206116,
+          "view_vote_accuracy": 0.7919999957084656,
+          "gain_percentage_points": 1.7799973487854004,
+          "root_errors_corrected": 380,
+          "root_correct_predictions_spoiled": 297,
+          "net_correction_gain_count": 83,
+          "prediction_changes_from_root": 939,
+          "view_disagreement_including_canonical": 0.1950249969959259,
+          "view_vote_ties": 259
+        },
+        {
+          "model": "augmented-vote-3",
+          "members": 3,
+          "canonical_accuracy": 0.7577999830245972,
+          "view_vote_accuracy": 0.7954000234603882,
+          "gain_percentage_points": 3.7600040435791016,
+          "root_errors_corrected": 401,
+          "root_correct_predictions_spoiled": 400,
+          "net_correction_gain_count": 1,
+          "prediction_changes_from_root": 1100,
+          "view_disagreement_including_canonical": 0.22638332843780518,
+          "view_vote_ties": 93
+        }
+      ]
+    },
+    "cats_vs_dogs": {
+      "examples": 2326,
+      "root_canonical_accuracy": 0.8159931302070618,
+      "root_view_vote_accuracy": 0.8116939067840576,
+      "mean_augmented_feature_distance": 5.2583169255937845,
+      "models": [
+        {
+          "model": "none-single",
+          "members": 1,
+          "canonical_accuracy": 0.8147033452987671,
+          "view_vote_accuracy": 0.815133273601532,
+          "gain_percentage_points": 0.04299283027648926,
+          "root_errors_corrected": 101,
+          "root_correct_predictions_spoiled": 104,
+          "net_correction_gain_count": -3,
+          "prediction_changes_from_root": 205,
+          "view_disagreement_including_canonical": 0.10812553763389587,
+          "view_vote_ties": 91
+        },
+        {
+          "model": "none-vote-3",
+          "members": 3,
+          "canonical_accuracy": 0.7777299880981445,
+          "view_vote_accuracy": 0.8048151135444641,
+          "gain_percentage_points": 2.708512544631958,
+          "root_errors_corrected": 198,
+          "root_correct_predictions_spoiled": 287,
+          "net_correction_gain_count": -89,
+          "prediction_changes_from_root": 485,
+          "view_disagreement_including_canonical": 0.19600889086723328,
+          "view_vote_ties": 54
+        },
+        {
+          "model": "augmented-single",
+          "members": 1,
+          "canonical_accuracy": 0.8129836916923523,
+          "view_vote_accuracy": 0.8181427121162415,
+          "gain_percentage_points": 0.515902042388916,
+          "root_errors_corrected": 92,
+          "root_correct_predictions_spoiled": 99,
+          "net_correction_gain_count": -7,
+          "prediction_changes_from_root": 191,
+          "view_disagreement_including_canonical": 0.1100601926445961,
+          "view_vote_ties": 99
+        },
+        {
+          "model": "augmented-vote-3",
+          "members": 3,
+          "canonical_accuracy": 0.8000859618186951,
+          "view_vote_accuracy": 0.8177127838134766,
+          "gain_percentage_points": 1.7626821994781494,
+          "root_errors_corrected": 176,
+          "root_correct_predictions_spoiled": 213,
+          "net_correction_gain_count": -37,
+          "prediction_changes_from_root": 389,
+          "view_disagreement_including_canonical": 0.1625465750694275,
+          "view_vote_ties": 57
+        }
+      ]
+    }
+  },
+  "elapsed_seconds": 26.155999999959022
+}

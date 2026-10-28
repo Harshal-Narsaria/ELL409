@@ -1,0 +1,12 @@
+{
+  "datasets": ["cifar10"],
+  "widths_by_dataset": {"cifar10": [128, 64]},
+  "seeds": [409],
+  "noise_rates": [0.15],
+  "root_epochs": 1200,
+  "mlp_epochs": 1200,
+  "source_run": "neural_tree_v5/runs/label-noise",
+  "source_config": "neural_tree_v5/config.json",
+  "wall_clock_budget_seconds": 2880,
+  "policy": "Time-limited, separately predeclared noisy CIFAR interpolation bracket. Train widths 128 then 64 at seed 409 with the same frozen CNN80 features, training-label noise map, splits, depth-one allocated topology, Adam settings and 1200-epoch node budget as the completed wide follow-up. Resume exact root/child tasks from original 400-epoch checkpoints; changed child tasks restart. Do not choose widths or stop based on held-out scores. Withhold test until both declared models finish. Stop at the next saved epoch after 48 wall-clock minutes; incomplete nodes are not 1200-epoch results and never enter the final capacity curve. Keep completed older results untouched. This adds one optimizer seed below the previously evaluated 256/512/1024 widths, not a three-seed repetition or a guaranteed full double-descent result."
+}

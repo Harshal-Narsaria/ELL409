@@ -1,0 +1,11 @@
+{
+  "dataset": "cifar10",
+  "seed": 409,
+  "noise_fraction": 0.15,
+  "widths": [128, 64, 32, 16, 8],
+  "root_epochs": 1200,
+  "mlp_epochs": 1200,
+  "depth": 0,
+  "wall_clock_budget_seconds": 2280,
+  "policy": "Separate fixed, time-limited root-only noisy CIFAR width study. Complete the five missing widths 8/16/32/64/128 at a common 1200-epoch budget, seed 409, same frozen CNN80 features, persistent training-noise map, splits and optimizer as the previous wide noisy study. Resume matching 400-epoch root tasks; reuse exact-task root checkpoints from the interrupted two-width tree follow-up when signatures match. No correction children are trained. Withhold test until all five fixed widths finish; do not stop, choose widths or change weights based on held-out metrics. Time cap is 38 minutes from startup with epoch checkpoints retained. Compare completed points to the matching root-only ablations at widths 256/512/1024. This is a root-width experiment, not a tree-depth experiment; one optimizer seed and reused test split are exploratory."
+}

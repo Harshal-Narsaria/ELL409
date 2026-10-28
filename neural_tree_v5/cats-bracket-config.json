@@ -1,0 +1,25 @@
+{
+  "datasets": [
+    "cats_vs_dogs"
+  ],
+  "widths_by_dataset": {
+    "cats_vs_dogs": [
+      256,
+      512
+    ]
+  },
+  "seeds": [
+    409,
+    410,
+    411
+  ],
+  "noise_rates": [
+    0.15,
+    0.0
+  ],
+  "root_epochs": 1200,
+  "mlp_epochs": 1200,
+  "source_run": "neural_tree_v5/runs/label-noise",
+  "source_config": "neural_tree_v5/config.json",
+  "policy": "Separate longer-training follow-up selected using training interpolation and convergence diagnostics. Exactly matching tasks continue the original optimizer, RNG, best checkpoint and epoch history from 400 to 1200. Changed child tasks and newly introduced widths train afresh for the same 1200-epoch budget. Frozen CNN, features, original split IDs, noise maps, optimizer and regularization are unchanged. Both noise levels and all three seeds run at the predeclared widths. Test is withheld until all follow-up jobs for a dataset finish, then reported as exploratory on the previously used test partition. Larger Cats widths are intended to reach and pass interpolation; neither interpolation nor double descent is guaranteed. Original training results and original submission files are read-only. Supplement selected using training-only evidence that width 1024 interpolated after 1200 epochs; widths 256 and 512 bracket the lower-capacity region at the identical budget. No held-out scores determined these widths."
+}

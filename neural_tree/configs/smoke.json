@@ -1,0 +1,20 @@
+{
+  "seed": 409,
+  "cnn_epochs": 3,
+  "early_cnn_epoch": 1,
+  "cnn_lr": 0.001,
+  "image_batch_size": 32,
+  "workers": 0,
+  "width": 8,
+  "node_epochs": 5,
+  "max_sweep_epochs": 5,
+  "correction_epochs": 10,
+  "node_lr": 0.01,
+  "feature_batch_size": 128,
+  "max_depth": 2,
+  "max_nodes": 7,
+  "fixed_topology": false,
+  "near_perfect": 0.995,
+  "sweep_widths": [4, 8, 16],
+  "repeat_seeds": [410, 411]
+}

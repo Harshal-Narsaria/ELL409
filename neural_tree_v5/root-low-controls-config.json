@@ -1,0 +1,16 @@
+{
+  "dataset": "cifar10",
+  "seed": 409,
+  "noise_fraction": 0.15,
+  "widths": [
+    4,
+    2
+  ],
+  "root_epochs": 1200,
+  "mlp_epochs": 1200,
+  "depth": 0,
+  "wall_clock_budget_seconds": 660,
+  "policy": "Optional predeclared low-capacity controls, widths 4 then 2, at 1200 epochs with the same root-only noisy CIFAR protocol. Run only if the fixed 8-128 study completes before 17:50 UTC, regardless of scores. Stop by 18:01 UTC. Compare only fully completed common-budget points; test is withheld until both control widths complete. One seed; original features, training labels and partitions fixed. This adds underfitting controls to the capacity window, not evidence of tree-depth double descent.",
+  "absolute_deadline_unix": 1791741660.0,
+  "start_only_before_unix": 1791741000.0
+}
